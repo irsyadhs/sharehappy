@@ -6,7 +6,8 @@
       padding-top: 10px;
       background-color: white;
       z-index: 9990;
-
+      margin-left: -105px;
+      padding-left: 100px;
   }
 
   #affix2.affix{
@@ -29,6 +30,7 @@
       padding-top: 0px;
       background-color: #3398CC;
       z-index: 9999;
+      margin-left: -30px;
 
   }
 
@@ -56,6 +58,8 @@
   @media only screen and (max-width: 1020px){
     #affix1.affix {
       width: 94%;
+      margin-left: -5px;
+      padding-left: 50px;
     }
     #affix2.affix{
       display: none;

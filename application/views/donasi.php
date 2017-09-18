@@ -31,7 +31,7 @@
   #tabnormal{
     display: inline-block;
   }
-  table.wide-table { width:500px; }
+  table.wide-table { width:450px; }
 
   
 
@@ -161,7 +161,7 @@
                       
                     </div>
                     <div class="tab-pane" id="debit">
-                      <table border="0">
+                      <table border="0" class="wide-table">
                         <tr>
                           <td width="4%"><input type="radio" value="mandirie" class="form-control" name="payment"></td>
                           <td width="46%"><img src="<?php echo base_url(); ?>assets/images/mandirie.png"></td>
@@ -178,7 +178,7 @@
                       </table>
                     </div>
                     <div class="tab-pane" id="kredit">
-                      <table border="0">
+                      <table border="0" class="wide-table">
                         <tr>
                           <td width="4%"><input type="radio" value="creditcard" class="form-control" name="payment"></td>
                           <td width="46%"><img src="<?php echo base_url(); ?>assets/images/creditcard.png"></td>
@@ -188,7 +188,7 @@
                       </table>
                     </div>
                     <div class="tab-pane" id="wallet">
-                      <table border="0">
+                      <table border="0" class="wide-table">
                         <tr>
                           <td width="4%"><input type="radio" value="xlw" class="form-control" name="payment"></td>
                           <td width="46%"><img src="<?php echo base_url(); ?>assets/images/xlw.png"></td>

@@ -85,15 +85,50 @@
                     <h5>Bank Central Asia</h5></td>
                   </tr>
                   <?php 
-                    }elseif ($payment == "bri") {
+                    }elseif ($payment == "bni") {
                   ?>
                   <tr height="40px">
-                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/bri.png"></td>
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/bni.png"></td>
                     <td width="300px"><h5>Transfer ke 206109281901555</h5>
                     <h5>a.n Sharing Happiness org</h5>
-                    <h5>Bank Rakyat Indonesia</h5></td>
+                    <h5>Bank Negara Indonesia</h5></td>
                   </tr>
-
+                  <?php 
+                    }elseif ($payment == "mandiri") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/mandiri.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Bank Mandiri</h5></td>
+                  </tr>
+                  <?php 
+                    }elseif ($payment == "mandiris") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/mandiris.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Bank Mandiri Syariah</h5></td>
+                  </tr>
+                  <?php 
+                    }elseif ($payment == "bnis") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/bnis.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Bank Negara Indonesia Syariah</h5></td>
+                  </tr>
+                  <?php 
+                    }elseif ($payment == "muamalat") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/muamalat.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Bank Muamalat</h5></td>
+                  </tr>
                   <?php 
                     } 
                   ?>

@@ -427,7 +427,7 @@ input:focus, textarea:focus, select:focus, button:focus, radio:focus, checkbox:f
 .btn-sigin {
 	float:left;
 	color:#FFF;
-	width:115px;
+	width:285px;
 	height:45px;
 	border:none;
 	font-size:14px;
@@ -437,6 +437,8 @@ input:focus, textarea:focus, select:focus, button:focus, radio:focus, checkbox:f
 	background:#DE5434;
 	text-transform:uppercase;
 }
+
+
 
 .btn-sigin:hover {
 	color:#FFF;

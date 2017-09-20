@@ -139,7 +139,7 @@
 	display: none;
 	width: 330px;
 	z-index: 99999;
-	background: #FFF;
+	background: #ecf0f1;
 	text-align: left;
 	position: absolute;
 	padding: 5px 20px 15px;
@@ -706,6 +706,18 @@ span.intro-icon i {
 	position: absolute;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.profile-name{
+	float : left;
+	margin: 25px 0px 5px 5px;
+}
+.profile-menu {
+	float: left;
+	margin: 25px 5px 5px 0px;
+}
+.profile-menu img {
 	border-radius: 50px;
 }
 .popular-data.larg img {

@@ -86,7 +86,11 @@
   );
   
   $this->session->set_userdata( $load );
-}
+  /* *********ALL RESOURCE WILL BE HERE ************ */
+  
+  }
+  $profilename = "Irsyad Harfiansyah";
+  $profilemail = "irsyadharfiansyah@gmail.com";
 ?>
 <div class="wrapper"> 
   <!-- Header -->
@@ -147,7 +151,7 @@
                   <div class="reverse"></div>
                   <div class="box-reverse left"></div>
                   <div class="box-reverse right"></div>
-                  <?php echo form_open('Proses/login', 'class="form-signin"'); ?>
+                  <?php echo form_open('login', 'class="form-signin"'); ?>
                     <div class="form-group">
                       <h3>Sign In</h3>
                       <button class="btn btn-facebook"> <i class="fa fa-facebook"></i> &nbsp; Log in with Facebook </button>
@@ -172,9 +176,36 @@
               <?php }else{ ?>
               <!-- <li><a href="<?php echo base_url(); ?>profile" class="btn btn-4 green">Profil</a></li> -->
 
-              <li><a href="<?php echo base_url(); ?>profile" class="btn btn-4 green">Irsyad</a></li>
+              <!-- <li><a href="<?php echo base_url(); ?>profile" class="btn btn-4 green">Irsyad</a></li> -->
+              <li class="login-panel">
+                <a href="<?php echo base_url(); ?>profile">Profile</a><span>&nbsp</span>
+                <div class="dropdown-login">
+                  <div class="arrow"></div>
+                  <div class="reverse"></div>
+                  <div class="box-reverse left"></div>
+                  <div class="box-reverse right"></div>
+                  <div class="profile-menu"><img src="assets/images/funder_1.jpg" alt="Funder" /></div>
+                  <div class="profile-name"><?php echo "<strong>".$profilename."</strong>"."<br>"."<small>".$profilemail."</small>"."<br>";
+                  ?></div>
+                  <?php echo form_open('profile', 'class="form-signin"'); ?>
+                  <?php
+                    echo form_submit('submit', 'Dashboard', 'class="btn btn-sigin"');
+                    echo form_close();
+                  ?>
+                  <br>
+                  <?php echo form_open('logout', 'class="form-signin"'); ?>
+                  <?php
+                    echo form_submit('submit', 'Log out', 'class="btn btn-sigin"');
+                    echo form_close();
+                  ?>
+
+                  <br style="clear:both;">
+                  <hr><br>
+                    
+                </div>
+              </li>
               <li><a href="<?php echo base_url(); ?>newcampaign" class="btn btn-4 red">New Campaign</a></li>&nbsp&nbsp
-              <li><a href="<?php echo base_url(); ?>Proses/logout">Logout</a></li>
+              <!-- <li><a href="<?php echo base_url(); ?>Proses/logout">Logout</a></li> -->
               <?php } ?>
               
               

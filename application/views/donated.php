@@ -130,6 +130,69 @@
                     <h5>Bank Muamalat</h5></td>
                   </tr>
                   <?php 
+                    }elseif ($payment == "muamalate") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/muamalat.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Bank Muamalat</h5></td>
+                  </tr>
+                  <?php 
+                    }elseif ($payment == "bcae") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/bca.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Bank Central Asia</h5></td>
+                  </tr>
+                  <?php 
+                    }elseif ($payment == "brie") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/bri.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Bank Rakyat Indonesia</h5></td>
+                  </tr>
+                  <?php 
+                    }elseif ($payment == "mandirie") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/mandiri.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Bank Mandiri</h5></td>
+                  </tr>
+                  <?php 
+                    }elseif ($payment == "creditcard") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/creditcard.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Kartu Kredit</h5></td>
+                  </tr>
+                  <?php 
+                    }elseif ($payment == "xlw") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/xlw.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>XL Tunai</h5></td>
+                  </tr>
+                  <?php 
+                    }elseif ($payment == "dokuw") {
+                  ?>
+                  <tr height="40px">
+                    <td width="200px"><img src="<?php echo base_url(); ?>assets/images/dokuw.png"></td>
+                    <td width="300px"><h5>Transfer ke 206109281901555</h5>
+                    <h5>a.n Sharing Happiness org</h5>
+                    <h5>Doku Wallet</h5></td>
+                  </tr>
+                  <?php 
                     } 
                   ?>
                   <tr height="40px">

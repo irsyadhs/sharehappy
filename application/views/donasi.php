@@ -2,9 +2,6 @@
     tr{
       height: 60px;
     }
-    th, td{
-      padding: 8px;
-    }
 
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
   .affix {
@@ -33,7 +30,20 @@
   }
   table.wide-table { width:450px; }
 
-  
+  table.wide-table td{
+    margin:5px;
+    padding:8px;
+  }
+  .wide-table td .swatch-img {
+    cursor:pointer;
+    display:block;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  input:checked + label img {
+    border:5px solid #DE5434;
+  }
 
   @media only screen and (max-width: 990px){
     table.wide-table { width:400px; }
@@ -87,7 +97,7 @@
           <?php if ($this->session->flashdata('message')) {
               echo "<h6><center>".$this->session->flashdata('message')."</center></h6>";
             } ?>
-          <?php echo form_open('Proses/donated'); ?>
+          <?php echo form_open('nextdonasi'); ?>
             <div id="basic-data" class="form-wizard active">
               <div class="form-group">
                 <h6>Nominal donasi</h6>
@@ -128,34 +138,50 @@
                   
                   <div class="tab-content">
                     <div class="tab-pane active" id="transfer">
-                      
-                      <!-- <select name="payment" class="form-control arrow-down">
-                        <option value="bca" selected>Transfer BCA</option>
-                        <option value="bri">Transfer BRI</option>
-                        <option value="man">Transfer Mandiri</option>
-                        <option value="bni">Transfer BNI</option>
-                        <option value="bris">Transfer BRI Syariah</option>
-                        <option value="mans">Transfer Mandiri Syariah</option>
-                        <option value="ebank">e-Banking</option>
-                      </select> -->
                       <table border="0" class="wide-table">
                         <tr>
-                          <td width="4%"><input type="radio" value="bca" class="form-control" name="payment" checked="checked"></td>
-                          <td width="46%"><img src="<?php echo base_url(); ?>assets/images/bca.png"></td>
-                          <td width="4%"><input type="radio" value="bni" class="form-control" name="payment"></td>
-                          <td width="46%"><img src=""><img src="<?php echo base_url(); ?>assets/images/bni.png"></td>
+                          <td width="4%">
+                            <input type="radio" value="mandiri" class="form-control" name="payment" checked="checked" id="mandiri">
+                          </td>
+                          <td width="46%">
+                            <label for="mandiri">
+                              <img src="<?php echo base_url(); ?>assets/images/mandiri.png" class="full swatch-img" alt="mandiri" title="mandiri">
+                            </label>
+                          </td>
+                          <td width="4%"><input type="radio" value="mandiris" class="form-control" name="payment" id="mandiris"></td>
+                          <td width="46%">
+                            <label for="mandiris">
+                              <img src="<?php echo base_url(); ?>assets/images/mandiris.png" class="full swatch-img" alt="mandiri syariah" title="Mandiri Syariah">
+                            </label>
+                          </td>
                         </tr>
                         <tr>
-                          <td width="4%"><input type="radio" value="mandiri" class="form-control" name="payment"></td>
-                          <td width="46%"><img src="<?php echo base_url(); ?>assets/images/mandiri.png"></td>
-                          <td width="4%"><input type="radio" value="mandiris" class="form-control" name="payment"></td>
-                          <td width="46%"><img src=""><img src="<?php echo base_url(); ?>assets/images/mandiris.png"></td>
+                          <td width="4%"><input type="radio" value="bca" class="form-control" name="payment" id="bca"></td>
+                          <td width="46%">
+                            <label for="bca">
+                              <img src="<?php echo base_url(); ?>assets/images/bca.png" class="full swatch-img" alt="bca" title="bca">
+                            </label>
+                          </td>
+                          <td width="4%"><input type="radio" value="muamalat" class="form-control" name="payment" id="muamalat"></td>
+                          <td width="46%">
+                            <label for="muamalat">
+                              <img src="<?php echo base_url(); ?>assets/images/muamalat.png" class="full swatch-img" alt="muamalat" title="Muamalat">
+                            </label>
+                          </td>
                         </tr>
                         <tr>
-                          <td width="4%"><input type="radio" value="bnis" class="form-control" name="payment"></td>
-                          <td width="46%"><img src="<?php echo base_url(); ?>assets/images/bnis.png"></td>
-                          <td width="4%"><input type="radio" value="muamalat" class="form-control" name="payment"></td>
-                          <td width="46%"><img src=""><img src="<?php echo base_url(); ?>assets/images/muamalat.png"></td>
+                          <td width="4%"><input type="radio" value="bni" class="form-control" name="payment" id="bni"></td>
+                          <td width="46%">
+                            <label for="bni">
+                              <img src="<?php echo base_url(); ?>assets/images/bni.png" class="full swatch-img" alt="bni" title="bni">
+                            </label>
+                          </td>
+                          <td width="4%"><input type="radio" value="bnis" class="form-control" name="payment" id="bnis"></td>
+                          <td width="46%">
+                            <label for="bnis">
+                              <img src="<?php echo base_url(); ?>assets/images/bnis.png" class="full swatch-img" alt="bni syariah" title="BNI Syariah">
+                            </label>
+                          </td>
                         </tr>
                       </table>
                       
@@ -163,26 +189,46 @@
                     <div class="tab-pane" id="debit">
                       <table border="0" class="wide-table">
                         <tr>
-                          <td width="4%"><input type="radio" value="mandirie" class="form-control" name="payment"></td>
-                          <td width="46%"><img src="<?php echo base_url(); ?>assets/images/mandirie.png"></td>
-                          <td width="4%"><input type="radio" value="bcae" class="form-control" name="payment"></td>
-                          <td width="46%"><img src=""><img src="<?php echo base_url(); ?>assets/images/bcae.png"></td>
+                          <td width="4%"><input type="radio" value="mandirie" class="form-control" name="payment" id="mandirie"></td>
+                          <td width="46%">
+                            <label for="mandirie">
+                              <img src="<?php echo base_url(); ?>assets/images/mandirie.png" class="full swatch-img" alt="mandiri clickpay" title="Mandiri ClickPay">
+                            </label>
+                          </td>
+                          <td width="4%">
+                            <input type="radio" value="bcae" class="form-control" name="payment" checked="checked" id="bcae">
+                          </td>
+                          <td width="46%">
+                            <label for="bcae">
+                              <img src="<?php echo base_url(); ?>assets/images/bcae.png" class="full swatch-img" alt="BCA Klikpay" title="BCA Klikpay">
+                            </label>
+                          </td>
                         </tr>
                         <tr>
-                          <td width="4%"><input type="radio" value="brie" class="form-control" name="payment"></td>
-                          <td width="46%"><img src="<?php echo base_url(); ?>assets/images/brie.png"></td>
-                          <td width="4%"><input type="radio" value="muamalate" class="form-control" name="payment"></td>
-                          <td width="46%"><img src=""><img src="<?php echo base_url(); ?>assets/images/muamalate.png"></td>
+                          <td width="4%"><input type="radio" value="brie" class="form-control" name="payment" id="brie"></td>
+                          <td width="46%">
+                            <label for="brie">
+                              <img src="<?php echo base_url(); ?>assets/images/brie.png" class="full swatch-img" alt="EPay BRI" title="EPay BRI">
+                            </label>
+                          </td>
+                          <td width="4%"><input type="radio" value="muamalate" class="form-control" name="payment" id="muamalate"></td>
+                          <td width="46%">
+                            <label for="muamalate">
+                              <img src="<?php echo base_url(); ?>assets/images/muamalate.png" class="full swatch-img" alt="IB muamalat" title="IB Muamalat">
+                            </label>
+                          </td>
                         </tr>
-                        
                       </table>
                     </div>
                     <div class="tab-pane" id="kredit">
                       <table border="0" class="wide-table">
                         <tr>
-                          <td width="4%"><input type="radio" value="creditcard" class="form-control" name="payment"></td>
-                          <td width="46%"><img src="<?php echo base_url(); ?>assets/images/creditcard.png"></td>
-                          
+                          <td width="4%"><input type="radio" value="creditcard" class="form-control" name="payment" id="cc"></td>
+                          <td width="46%">
+                            <label for="cc">
+                              <img src="<?php echo base_url(); ?>assets/images/creditcard.png" class="full swatch-img" alt="Credit Card" title="Credit Card">
+                            </label>
+                          </td>
                         </tr>
                        
                       </table>
@@ -190,10 +236,18 @@
                     <div class="tab-pane" id="wallet">
                       <table border="0" class="wide-table">
                         <tr>
-                          <td width="4%"><input type="radio" value="xlw" class="form-control" name="payment"></td>
-                          <td width="46%"><img src="<?php echo base_url(); ?>assets/images/xlw.png"></td>
-                          <td width="4%"><input type="radio" value="dokuw" class="form-control" name="payment"></td>
-                          <td width="46%"><img src=""><img src="<?php echo base_url(); ?>assets/images/dokuw.png"></td>
+                          <td width="4%"><input type="radio" value="xlw" class="form-control" name="payment" id="xlw"></td>
+                          <td width="46%">
+                            <label for="xlw">
+                              <img src="<?php echo base_url(); ?>assets/images/xlw.png" class="full swatch-img" alt="XL Tunai" title="XL Tunai">
+                            </label>
+                          </td>
+                          <td width="4%"><input type="radio" value="dokuw" class="form-control" name="payment" id="dokuw"></td>
+                          <td width="46%">
+                            <label for="dokuw">
+                              <img src="<?php echo base_url(); ?>assets/images/dokuw.png" class="full swatch-img" alt="Doku Wallet" title="Doku Wallet">
+                            </label>
+                          </td>
                         </tr>
                       </table>
                     </div>

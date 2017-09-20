@@ -42,10 +42,10 @@
                     </ul>
                     <div class="clear"></div>
                     <center><a href="<?php echo base_url(); ?>campaignpage"><button type="button" class="btn btn-3 red">DONASI</button></a></center>
-                  </div>
+                  </dsiv>
 
                 </div>
-                
+              </li>  
                 
           
             <!-- SLIDE 2 -->

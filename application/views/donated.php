@@ -55,9 +55,9 @@
                     <td width="100px" align="right"><h5><?php echo $kode; ?></h5></td>
                   </tr>
                   <tr height="40px" bgcolor="#DE5434">
-                    <td width="300px" align="left"><h4>Total Pembayaran</h4></td>
-                    <td width="100px" align="left"><h4>Rp</h4></td>
-                    <td width="100px" align="right"><h4><?php echo $totalprint;?></h4></td>
+                    <td width="300px" align="left"><h4><font color="#fff">Total Pembayaran</font></h4></td>
+                    <td width="100px" align="left"><h4><font color="#fff">Rp</font></h4></td>
+                    <td width="100px" align="right"><h4><font color="#fff"><?php echo $totalprint;?></font></h4></td>
 
                   </tr>
 

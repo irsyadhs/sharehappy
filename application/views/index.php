@@ -1,3 +1,61 @@
+  <style>
+    .index-video{
+      float: left;
+      padding-right: 45px;
+      padding-left: 45px;
+      padding-top: 12px;
+      height: 310px;
+      background: url('<?php echo base_url(); ?>assets/images/imac.png') no-repeat center center;
+    }
+    .index-bottom{
+      float: left;
+      text-align: left;
+      padding-left: 150px;
+    }
+    @media only screen and (max-width: 770px){
+      .index-video{
+        float: center;
+      }
+      .index-bottom{
+        float: center;
+      }
+    }
+    @media only screen and (max-width: 990px){
+      iframe{
+        width: 326px;
+        height: 183px; 
+      }
+      .index-video{
+        height: 285;
+        width: 50%;
+        background: url('<?php echo base_url(); ?>assets/images/imac2.png') no-repeat center center;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 23px;
+      }
+      .index-bottom{
+        margin-left: 0px;
+        width: 50%; 
+      }
+    }
+    @media only screen and (max-width: 1200px){
+      .index-video{
+
+      }
+      .index-bottom{
+        padding-left: 0px;
+      }
+    }
+    @media only screen and (max-width: 1020px){
+      .index-video{
+
+      }
+      .index-bottom{
+        padding-left: 0px;
+      }
+    }
+  </style>
+
   <?php if(!isset($_SESSION['login'])){
         $load = array(
           'login' => FALSE
@@ -90,7 +148,7 @@
   </section>
   
   <!-- Page Content -->
-  <section class="white">
+  <!-- <section class="white">
     <article class="container" id="intor-section">
       <h3>5 Alasan Berdonasi di <br /> Sharing Happiness</h3>
       <ul>
@@ -121,7 +179,7 @@
         </li>
       </ul>
     </article>
-  </section>
+  </section> -->
   
   <section class="gray">
     <article class="container main" id="popular">
@@ -175,7 +233,11 @@
   <section class="send-us">
     <article class="container">
       <h3>Ingin menggalang dana atau berdonasi?</h3>
-      <center>
+      <div class="index-video">
+         <iframe width="357" height="201" src="https://www.youtube.com/embed/97-Rw_STcxg?autoplay=1">
+          </iframe> 
+      </div>
+      <div class="index-bottom">
         <table border="0">
           <tr>
             <td width="30"><img src="assets/images/check.png"></td>
@@ -202,10 +264,11 @@
             <td><font size="4">Mulai sekarang untuk berbagi kebahagiaan sesama!</font></td>
           </tr>
         </table>
-      </center>
+        <br><br><br>
+        <a href="<?php echo site_url(); ?>newcampaign" class="btn btn-4 red">Create Campaign</a>
+      </div>
       
       
-      <br><br><br>
-      <a href="<?php echo site_url(); ?>newcampaign" class="btn btn-4 red">Create Campaign</a> 
+       
     </article>
   </section>

@@ -64,8 +64,8 @@ h3 {
 }
 
 h4 {
-	font-weight: 400;
-	font-size: 19.5px;
+	font-weight: 600;
+	font-size: 20px;
 }
 
 h4 a {
@@ -73,14 +73,14 @@ h4 a {
 }
 
 h5 {
-	font-size:15px;
+	font-size:17px;
 	font-weight:600;
 	line-height:22px;
 }
 
 h6 {
-	font-size:13px;
-	font-weight:700;
+	font-size:15px;
+	font-weight:600;
 }
 
 hr {
@@ -96,7 +96,7 @@ ul {
 }
 
 section {
-	padding:70px 0px;
+	padding:50px 0px;
 }
 
 section.main-slider {

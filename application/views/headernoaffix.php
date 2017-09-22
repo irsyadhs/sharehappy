@@ -50,7 +50,20 @@
 <![endif]-->
 </head>
 
+
 <body>
+<?php if(!isset($_SESSION['login'])){
+  $load = array(
+    'login' => FALSE
+  );
+  
+  $this->session->set_userdata( $load );
+  /* *********ALL RESOURCE WILL BE HERE ************ */
+  
+  }
+  $profilename = "Irsyad Harfiansyah";
+  $profilemail = "irsyadharfiansyah@gmail.com";
+?>
 <div class="wrapper"> 
   <!-- Header -->
   <header>
@@ -100,6 +113,9 @@
         <div class="header-right">
           <div class="header-right-btns">
             <ul>
+              <?php 
+              if($_SESSION['login'] == FALSE){ 
+              ?>
               <li class="login-panel">
                 <a href="index.html#login">Login</a><span>Or</span>
                 <div class="dropdown-login">
@@ -107,25 +123,64 @@
                   <div class="reverse"></div>
                   <div class="box-reverse left"></div>
                   <div class="box-reverse right"></div>
-                  <form action="<?php echo base_url(); ?>profile" method="post">
+                  <?php echo form_open('login', 'class="form-signin"'); ?>
                     <div class="form-group">
                       <h3>Sign In</h3>
                       <button class="btn btn-facebook"> <i class="fa fa-facebook"></i> &nbsp; Log in with Facebook </button>
                       <hr>
                       <img src="<?php echo base_url(); ?>assets/images/or.png" alt="OR" />
-                      <input id="email" type="text" value="Your email">
-                      <input id="password" type="text" value="Your password">
+                      <input type="email" value="" class="form-control" placeholder="Email" name="email" required>
+                      <input type="password" value="" class="form-control" placeholder="Password" name="password" required>
                     </div>
                     <span class="text-gray remember"><input type="checkbox" id="remember" value=""> <label for="remember">Remember me</label></span>
-                    <button type="submit" class="btn btn-sigin">Sign me in!</button>
+                    <?php
+                      echo form_submit('submit', 'Sign me in!', 'class="btn btn-sigin"');
+                      echo form_close();
+                    ?>
+                    <!-- <button type="submit" class="btn btn-sigin">Sign me in!</button> -->
                     <br style="clear:both;">
                     <hr><br>
                     <a class="link" href="index.html#">Forgot password?</a>
-                  </form>
                 </div>
               </li>
               <li><a href="<?php echo base_url(); ?>register" class="btn btn-4 green">Register</a></li>
               <li><a href="<?php echo base_url(); ?>newcampaign" class="btn btn-4 red">New Campaign</a></li>
+              <?php }else{ ?>
+              <!-- <li><a href="<?php echo base_url(); ?>profile" class="btn btn-4 green">Profil</a></li> -->
+
+              <!-- <li><a href="<?php echo base_url(); ?>profile" class="btn btn-4 green">Irsyad</a></li> -->
+              <li class="login-panel">
+                <a href="<?php echo base_url(); ?>profile">Profile</a><span>&nbsp</span>
+                <div class="dropdown-login">
+                  <div class="arrow"></div>
+                  <div class="reverse"></div>
+                  <div class="box-reverse left"></div>
+                  <div class="box-reverse right"></div>
+                  <div class="profile-menu"><img src="assets/images/funder_1.jpg" alt="Funder" /></div>
+                  <div class="profile-name"><?php echo "<strong>".$profilename."</strong>"."<br>"."<small>".$profilemail."</small>"."<br>";
+                  ?></div>
+                  <?php echo form_open('profile', 'class="form-signin"'); ?>
+                  <?php
+                    echo form_submit('submit', 'Dashboard', 'class="btn btn-sigin"');
+                    echo form_close();
+                  ?>
+                  <br>
+                  <?php echo form_open('logout', 'class="form-signin"'); ?>
+                  <?php
+                    echo form_submit('submit', 'Log out', 'class="btn btn-sigin"');
+                    echo form_close();
+                  ?>
+
+                  <br style="clear:both;">
+                  <hr><br>
+                    
+                </div>
+              </li>
+              <li><a href="<?php echo base_url(); ?>newcampaign" class="btn btn-4 red">New Campaign</a></li>&nbsp&nbsp
+              <!-- <li><a href="<?php echo base_url(); ?>Proses/logout">Logout</a></li> -->
+              <?php } ?>
+              
+              
             </ul>
           </div>
           <div class="search-box border-right">

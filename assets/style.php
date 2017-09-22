@@ -4,6 +4,15 @@
 /* CSS Document */
 
 
+.errormsg{
+	background-color: #f46060;
+	color: #fff;
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin-bottom: 5px;
+}
 
 /************************ Header Section ************************/
 
@@ -2495,7 +2504,6 @@ h6 {
 	font-weight: 700;
 	margin-bottom: 20px;
 	padding-bottom: 15px;
-	text-transform: uppercase;
 	border-bottom: solid 1px #f0f0f0;
 }
 

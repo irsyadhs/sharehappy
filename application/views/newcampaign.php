@@ -29,8 +29,8 @@
       <div class="start-project">
         <div class="title">
           <ul>
-            <li data-link="basic-data" class="current"><a href="start.php#"><i class="fa fa-pagelines"></i><span>Informasi Dasar</span></a></li>
-            <li data-link="social-media" class=""><a href="start.php#"><i class="fa fa-link"></i><span>Informasi Kontak</span></a></li>
+            <li data-link="basic-data" class="current"><a href="start.php#"><i class="fa fa-file-o"></i><span>Informasi Dasar</span></a></li>
+            <li data-link="social-media" class=""><a href="start.php#"><i class="fa fa-user"></i><span>Informasi Kontak</span></a></li>
             
             <li data-link="image-vidoe" class=""><a href="start.php#"><i class="fa fa-file-image-o"></i><span>Dokumentasi Campaign</span></a></li>
           </ul>

@@ -18,13 +18,18 @@
 			//$this->load->model('M_Regis');
 			//$load['data'] = $this->M_Regis->getAll("data_properti");
 			//$this->load->view('beranda', $load);
+			
 			$this->load->view('home', $load);
 		}
 
 		public function login(){
 			//$this->load->model('M_Regis');
+			//LOAD DARI DATABASE
 			$userdb = "irsyadharfiansyah@gmail.com";
 			$passdb = "hahaha";
+			$name = "Irsyad Harfiansyah";
+			$tlp = "08111019966";
+
 			$email = $this->input->post('email');
 			$pass = $this->input->post('password');
 			/*if($this->M_Regis->CheckLogin($user, $pass)==TRUE){
@@ -39,6 +44,8 @@
 			if(($email == $userdb)&&($pass == $passdb)){
 				$data = array(
 					'email' => $email,
+					'tlp' => $tlp,
+					'name' => $name,
 					'login' => TRUE
 				);
 				$this->session->set_userdata($data);
@@ -116,8 +123,32 @@
 				'id_rumah' => $id 
 				);
 			$this->M_Regis->insertData("interested", $data);*/
-			$this->form_validation->set_rules('nominal', 'nominal', 'required|numeric');
-			$this->form_validation->set_rules('tlp', 'tlp', 'required|numeric');
+			$this->form_validation->set_rules('nominal', 'nominal', 'required|numeric',
+				array(
+					'required' => 'Kolom nominal wajib diisi',
+					'numeric' => 'Isi nominal donasi dengan angka saja'
+					)
+				);
+			$this->form_validation->set_rules('tlp', 'tlp', 'required|numeric', 
+				array(
+					'required' => 'Kolom nomor ponsel wajib diisi',
+					'numeric' => 'Isi nomor ponsel dengan angka saja'
+					)
+				);
+			$this->form_validation->set_rules('nama', 'nama', 'required', 
+				array(
+					'required' => 'Kolom nama wajib diisi'
+					)
+				);
+			$this->form_validation->set_rules('email', 'email', 'required|valid_email',
+				array(
+					'required' => 'Alamat email wajib diisi',
+					'valid_email' => 'Tulis alamat email yang sesuai'
+					)
+				);
+
+			
+
 
 			if($this->form_validation->run() == TRUE){
 				$nominal = $this->input->post('nominal');
@@ -125,20 +156,25 @@
 				$komentar = $this->input->post('komentar');
 				$payment = $this->input->post('payment');
 				$anom = $this->input->post('anom');
+				$nama = $this->input->post('nama');
+				$email = $this->input->post('email');
 				$data = array(
 							'nominal' => $nominal,
 							'tlp' => $tlp,
 							'komentar' => $komentar,
 							'payment' => $payment,
-							'anom' => $anom
+							'anom' => $anom,
+							'nama' => $nama,
+							'email' => $email
 						);
 
 				$this->load->view('headernoaffix');
 				$this->load->view('donated', $data);
 				$this->load->view('footer');
 			}else{
-				$data['message'] = $this->session->set_flashdata('message', 'Isi kolom yang wajib / isi angka saja pada kolom nominal dan nomor telepon');
-				redirect('donasi','refresh');
+				$this->load->view('headernoaffix');
+				$this->load->view('donasi');
+				$this->load->view('footer');
 
 			}
 			

@@ -135,7 +135,7 @@
               <div id="tabnormal">
                 <ul class="nav nav-tabs pstabs" id="affix1" data-spy="affix" data-offset-top="720">
                   <li class="active"><a href="campaignpage.php#about-project">Detail</a></li>
-                  <li><a href="campaignpage.php#costs">Rincian Biaya</a></li>
+                  <li><a href="campaignpage.php#costs">Update Campaign</a></li>
                   <li><a href="campaignpage.php#donatur">Donatur<i>27</i></a></li>
                   <li><a href="campaignpage.php#pesan">Pesan </a></li>
                 </ul>  

@@ -205,6 +205,7 @@
                 </table>
                 <br><br><hr><br><br>
                 <button class="btn btn-facebook" style="width: 500px;"> <i class="fa fa-facebook"></i> &nbsp; BAGIKAN KE FACEBOOK </button>
+                <a class="link" href="Home">Kembali ke beranda</a>
               </center>
                
           </div>

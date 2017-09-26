@@ -145,7 +145,7 @@
               if($_SESSION['login'] == FALSE){ 
               ?>
               <li class="login-panel">
-                <a href="index.html#login">Login</a><span>Or</span>
+                <a href="index.html#login">Login</a><span>&nbsp</span>
                 <div class="dropdown-login">
                   <div class="arrow"></div>
                   <div class="reverse"></div>
@@ -156,23 +156,29 @@
                       <h3>Sign In</h3>
                       <button class="btn btn-facebook"> <i class="fa fa-facebook"></i> &nbsp; Log in with Facebook </button>
                       <hr>
-                      <img src="<?php echo base_url(); ?>assets/images/or.png" alt="OR" />
+                      <img src="<?php echo base_url(); ?>assets/images/or.png" alt="OR">
                       <input type="email" value="" class="form-control" placeholder="Email" name="email" required>
                       <input type="password" value="" class="form-control" placeholder="Password" name="password" required>
                     </div>
+                    <a class="link" href="index.html#">Forgot password?</a>
                     <span class="text-gray remember"><input type="checkbox" id="remember" value=""> <label for="remember">Remember me</label></span>
+                    
                     <?php
                       echo form_submit('submit', 'Sign me in!', 'class="btn btn-sigin"');
                       echo form_close();
                     ?>
+                    <?php
+                    echo form_open('register', 'class="form-signin"');
+                      echo form_submit('submit', 'Baru? Daftar Sekarang!', 'class="btn btn-sigin"');
+                      echo form_close();
+                    ?>
                     <!-- <button type="submit" class="btn btn-sigin">Sign me in!</button> -->
                     <br style="clear:both;">
-                    <hr><br>
-                    <a class="link" href="index.html#">Forgot password?</a>
+                    
                 </div>
               </li>
-              <li><a href="<?php echo base_url(); ?>register" class="btn btn-4 green">Register</a></li>
-              <li><a href="<?php echo base_url(); ?>newcampaign" class="btn btn-4 red">New Campaign</a></li>
+              <!-- <li><a href="<?php //echo base_url(); ?>register" class="btn btn-4 green">Register</a></li> -->
+              <li><a href="<?php echo base_url(); ?>trylogin" class="btn btn-4 red">New Campaign</a></li>
               <?php }else{ ?>
               <!-- <li><a href="<?php echo base_url(); ?>profile" class="btn btn-4 green">Profil</a></li> -->
 

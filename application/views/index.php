@@ -1,4 +1,10 @@
   <style>
+    .footer-content1{
+      display: inline-block;
+    }
+    .footer-content2{
+      display: none;
+    }
     .index-video{
       float: left;
       padding-right: 45px;
@@ -12,14 +18,64 @@
       text-align: left;
       padding-left: 150px;
     }
-    @media only screen and (max-width: 770px){
-      .index-video{
-        float: center;
+    .index-video2{
+      padding-right: 45px;
+      padding-left: 45px;
+      padding-top: 12px;
+      height: 310px;
+      background: url('<?php echo base_url(); ?>assets/images/imac.png') no-repeat center center;
+    }
+    .index-bottom2{
+      float: left;
+      text-align: left;
+      padding-top: 50px;
+      padding-left: 50px;
+    }
+    @media only screen and (max-width: 300px){
+      .footer-content1{
+        display: none;
       }
-      .index-bottom{
-        float: center;
+      .footer-content2{
+        display: none;
+      } 
+    }
+
+    @media only screen and (max-width: 500px){
+      .index-video2{
+        background: url('<?php echo base_url(); ?>assets/images/imac3.png') no-repeat center center;
+        padding-top: 43px !important;
+      }
+      .footer-content1{
+        display: none;
+      }
+      .footer-content2{
+        display: inline-block;
+      }
+      #iframemobile{
+        width: 283px !important;
+        height: 160px !important; 
       }
     }
+
+    @media only screen and (max-width: 768px){
+      .index-video2{
+        padding-top: 12px;
+      }
+      .index-bottom2{
+        padding-left: 0px;
+      }
+      .footer-content1{
+        display: none;
+      }
+      .footer-content2{
+        display: inline-block;
+      }
+      #iframemobile{
+        width: 357px;
+        height: 201px; 
+      }
+    }
+
     @media only screen and (max-width: 990px){
       iframe{
         width: 326px;
@@ -233,40 +289,82 @@
   <section class="send-us">
     <article class="container">
       <h3>Ingin menggalang dana atau berdonasi?</h3>
-      <div class="index-video">
-         <iframe width="357" height="201" src="https://www.youtube.com/embed/97-Rw_STcxg?autoplay=1">
+      <div class="footer-content1">
+        <div class="index-video">
+         <iframe width="357" height="201" src="https://www.youtube.com/embed/97-Rw_STcxg">
           </iframe> 
+        </div>
+        <div class="index-bottom">
+          <table border="0">
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Login atau register dengan cepat</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Pilih program yang ingin diberi donasi</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Klik create campaign untuk membuat campaign mu</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Buat campaign mu dengan langkah mudah</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Donasi cepat terverifikasi</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Mulai sekarang untuk berbagi kebahagiaan sesama!</font></td>
+            </tr>
+          </table>
+          <br><br><br>
+          <a href="<?php echo site_url(); ?>newcampaign" class="btn btn-4 red">Create Campaign</a>
+        </div>
       </div>
-      <div class="index-bottom">
-        <table border="0">
-          <tr>
-            <td width="30"><img src="assets/images/check.png"></td>
-            <td><font size="4">Login atau register dengan cepat</font></td>
-          </tr>
-          <tr>
-            <td width="30"><img src="assets/images/check.png"></td>
-            <td><font size="4">Pilih program yang ingin diberi donasi</font></td>
-          </tr>
-          <tr>
-            <td width="30"><img src="assets/images/check.png"></td>
-            <td><font size="4">Klik create campaign untuk membuat campaign mu</font></td>
-          </tr>
-          <tr>
-            <td width="30"><img src="assets/images/check.png"></td>
-            <td><font size="4">Buat campaign mu dengan langkah mudah</font></td>
-          </tr>
-          <tr>
-            <td width="30"><img src="assets/images/check.png"></td>
-            <td><font size="4">Donasi cepat terverifikasi</font></td>
-          </tr>
-          <tr>
-            <td width="30"><img src="assets/images/check.png"></td>
-            <td><font size="4">Mulai sekarang untuk berbagi kebahagiaan sesama!</font></td>
-          </tr>
-        </table>
-        <br><br><br>
-        <a href="<?php echo site_url(); ?>newcampaign" class="btn btn-4 red">Create Campaign</a>
+      <div class="footer-content2">
+        <div class="index-video2">
+         <iframe id="iframemobile" src="https://www.youtube.com/embed/97-Rw_STcxg">
+          </iframe> 
+        </div>
+        <div class="index-bottom2">
+          <table border="0">
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Login atau register dengan cepat</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Pilih program yang ingin diberi donasi</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Klik create campaign untuk membuat campaign mu</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Buat campaign mu dengan langkah mudah</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Donasi cepat terverifikasi</font></td>
+            </tr>
+            <tr>
+              <td width="30"><img src="assets/images/check.png"></td>
+              <td><font size="4">Mulai sekarang untuk berbagi kebahagiaan sesama!</font></td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+            </tr>
+          </table>
+          <br><br><br>
+          <center><a href="<?php echo site_url(); ?>newcampaign" class="btn btn-4 red">Create Campaign</a></center>
+        </div>
       </div>
+      
       
       
        

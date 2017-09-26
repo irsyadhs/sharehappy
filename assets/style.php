@@ -3,6 +3,16 @@
 @charset "utf-8";
 /* CSS Document */
 
+ @media only screen and (max-width: 380px){
+    html{
+    	margin-right : -50px;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    html{
+    	margin-right : -70px;
+    }
+  }
 
 .errormsg{
 	background-color: #f46060;
@@ -167,7 +177,7 @@
 	border-color: transparent;
 	margin-left: 189px;
 	margin-top: -24px;
-	border-top-color: #fff;
+	border-top-color: #ecf0f1;
 	border-bottom-width: 0;
 	content: "";
 	border-width: 10px;
@@ -187,7 +197,7 @@
 	height: 15px;
 }
 .dropdown-login .box-reverse.left {
-	background-color: #FFF;
+	background-color: #ecf0f1;
 	width: 58%;
 	height: 15px;
 	position: absolute;
@@ -195,7 +205,7 @@
 	left: 0px;
 }
 .dropdown-login .box-reverse.right {
-	background-color: #FFF;
+	background-color: #ecf0f1;
 	width: 32%;
 	height: 15px;
 	position: absolute;

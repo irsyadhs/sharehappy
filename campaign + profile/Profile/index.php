@@ -118,27 +118,27 @@
       <ul class="sidebar-menu" >
         <li class="current">
           <a href="<?php echo base_url()?>profile">
-            <span style="font-size: 19px; color:#ffffff;">Overview</span>
-          </a>
-        </li>
-        <li >
-          <a href="<?php echo base_url()?>profile/MyCampaign">
-            <span style="font-size: 19px; color:#ffffff;">Campaign Saya</span>
+            <span style="font-size: 15px; color:#ffffff;">Dashboard</span>
           </a>
         </li>
         <li>
           <a href="<?php echo base_url()?>profile/MyDonation">
-            <span style="font-size: 19px; color:#ffffff;">Donasi Saya</span></a>
+            <span style="font-size: 15px; color:#ffffff;">Donasi Saya</span></a>
+        </li>
+        <li >
+          <a href="<?php echo base_url()?>profile/MyCampaign">
+            <span style="font-size: 15px; color:#ffffff;">Kampanye Saya</span>
+          </a>
         </li>
         <li class="treeview">
           <a href="#">
-            <span style="font-size: 19px; color:#ffffff;">Setting</span> <i class="fa fa-angle-left pull-right" style="font-size: 19px; color:#ffffff;" ></i>
+            <span style="font-size: 15px; color:#ffffff;">Setting</span> <i class="fa fa-angle-left pull-right" style="font-size: 15px; color:#ffffff;" ></i>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html" style="color:#ffffff;">Informasi Personal</a></li>
-            <li><a href="index2.html" style="color:#ffffff;">Edit Password</a></li>
-            <li><a href="index2.html" style="color:#ffffff;">Edit Profile Picture</a></li>
-            <li><a href="index2.html" style="color:#ffffff;">Verifikasi Akun</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/MyInfo" style="color:#ffffff;">Profil Saya</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/EditPass" style="color:#ffffff;">Edit Password</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/EditProfilePic" style="color:#ffffff;">Edit Profile Picture</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/VerifyAkun" style="color:#ffffff;">Verifikasi Akun</a></li>
           </ul>
         </li>
       </ul>
@@ -158,9 +158,9 @@
                <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
+              <h3>3<sup style="font-size: 20px"></sup></h3>
 
-              <p>Campaign</p>
+              <p><font color="white">Campaign</font></p>
             </div>
             <div class="icon">
               <i class="ion ion-ribbon-b"></i>
@@ -172,9 +172,9 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>44</h3>
+              <h3>10</h3>
 
-              <p>Donasi</p>
+              <p><font color="white">Donasi</font></p>
             </div>
             <div class="icon">
               <i class="ion ion-ribbon-a"></i>
@@ -188,7 +188,7 @@
             <div class="inner">
               <h3><sup style="font-size: 18px">Rp.</sup> 6.000.000</h3>
 
-              <p>Total Donasi Saya</p>
+              <p><font color="white">Total Donasi Saya</font></p>
             </div>
             <div class="icon">
               <i class="ion ion-cash"></i>

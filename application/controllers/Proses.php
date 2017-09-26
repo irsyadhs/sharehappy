@@ -52,7 +52,7 @@
 				redirect('profile');
 			}else{
 				$data['message'] = $this->session->set_flashdata('message', 'Sorry, username does not exist or password you entered did not match.');
-				redirect('loginfail');
+				redirect('trylogin');
 			}
 		}
 

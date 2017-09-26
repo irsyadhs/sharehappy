@@ -58,7 +58,7 @@
   @media only screen and (max-width: 1020px){
     #affix1.affix {
       width: 94%;
-      margin-left: -5px;
+      margin-left: -10px;
       padding-left: 50px;
     }
     #affix2.affix{
@@ -135,7 +135,7 @@
               <div id="tabnormal">
                 <ul class="nav nav-tabs pstabs" id="affix1" data-spy="affix" data-offset-top="720">
                   <li class="active"><a href="campaignpage.php#about-project">Detail</a></li>
-                  <li><a href="campaignpage.php#costs">Update Campaign</a></li>
+                  <li><a href="campaignpage.php#costs">Update</a></li>
                   <li><a href="campaignpage.php#donatur">Donatur<i>27</i></a></li>
                   <li><a href="campaignpage.php#pesan">Pesan </a></li>
                 </ul>  
@@ -338,6 +338,8 @@
                   </div>
                 </div>
                 <button class="btn btn-facebook" > <i class="fa fa-facebook"></i> &nbsp; BAGIKAN KE FACEBOOK </button>
+                </a>
+
                 <div class="side-box">
                   <form action="project-single.php">
                     <!-- <div class="form-group">

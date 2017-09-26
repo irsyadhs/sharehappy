@@ -77,6 +77,7 @@
 
   </style>
   
+  
   <?php 
   if(!isset($_SESSION['login'])){
     $load = array(
@@ -119,7 +120,7 @@
             <div class="tabpanel">
               <ul class="nav nav-tabs pstabs" id="tabnormal">
                 <li class="active"><a href="donasi.php#nominal">Informasi dan Nominal</a></li>
-                <li><a href="donasi.php#payment">Metode Pembayaran</a></li>
+                <li class="disabled"><a href="#">Metode Pembayaran</a></li>
               </ul>
               <hr>
               <br>

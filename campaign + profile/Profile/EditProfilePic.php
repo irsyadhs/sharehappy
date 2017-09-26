@@ -66,9 +66,6 @@
     margin-right: 5%;
 
   }
-  .table-container .campaign-list{
-    text-align: center;
-  }
   .table-container .campaign-name {
       background-color: #ecf0f1;
       padding-left: 10px;
@@ -88,7 +85,6 @@
  .sidebar-menu .current{
     background:#555555;
  }
-
  .sidebar-menu > ul > li > ul> li> a:hover{
   background-color: yellow;
  } 
@@ -118,29 +114,29 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" >
-        <li>
+        <li >
           <a href="<?php echo base_url()?>profile">
-            <span style="font-size: 19px; color:#ffffff;">Overview</span>
+            <span style="font-size: 15px; color:#ffffff;">Dashboard</span>
           </a>
         </li>
-        <li class="current">
-          <a href="<?php echo base_url()?>profile/MyCampaign">
-            <span style="font-size: 19px; color:#ffffff;">Campaign Saya</span>
-          </a>
-        </li>
-        <li>
+        <li >
           <a href="<?php echo base_url()?>profile/MyDonation">
-            <span style="font-size: 19px; color:#ffffff;">Donasi Saya</span></a>
+            <span style="font-size: 15px; color:#ffffff;">Donasi Saya</span></a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <span style="font-size: 19px; color:#ffffff;">Setting</span> <i class="fa fa-angle-left pull-right" style="font-size: 19px; color:#ffffff;" ></i>
+        <li >
+          <a href="<?php echo base_url()?>profile/MyCampaign">
+            <span style="font-size: 15px; color:#ffffff;">Kampanye Saya</span>
           </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="index.html" style="color:#ffffff;">Informasi Personal</a></li>
-            <li><a href="index2.html" style="color:#ffffff;">Edit Password</a></li>
-            <li><a href="index2.html" style="color:#ffffff;">Edit Profile Picture</a></li>
-            <li><a href="index2.html" style="color:#ffffff;">Verifikasi Akun</a></li>
+        </li>
+        <li class="treeview active">
+          <a href="#">
+            <span style="font-size: 15px; color:#ffffff;">Setting</span> <i class="fa fa-angle-left pull-right" style="font-size: 15px; color:#ffffff;" ></i>
+          </a>
+          <ul class="treeview-menu menu-open">
+            <li><a href="<?php echo base_url(); ?>Profile/MyInfo" style="color:#ffffff;">Profil Saya</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/EditPass" style="color:#ffffff;">Edit Password</a></li>
+            <li class="current"><a href="<?php echo base_url(); ?>Profile/EditProfilePic" style="color:#ffffff;">Edit Profile Picture</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/VerifyAkun" style="color:#ffffff;">Verifikasi Akun</a></li>
           </ul>
         </li>
       </ul>
@@ -152,75 +148,39 @@
   <div class="content-wrapper">
     <!-- Main content -->
     <section class="content">
-     
       <!-- Main row -->
-      <div class="box box-success" style="width:85%; margin-left: 7.5%; height: 600px;">
-        <center><h3 class="box-title">Campaign Saya</h3></center>
-        <br>
-                
         
-        
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
-            <div class="info-box-content">
-              <span class="info-box-text">Messages</span>
-              <span class="info-box-number">1,410</span>
-            </div>
-            <a href="#" class="small-box-footer">
-              More info <i class="fa fa-arrow-circle-right"></i>
-            </a>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
 
-            <div class="info-box-content">
-              <span class="info-box-text">Bookmarks</span>
-              <span class="info-box-number">410</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
+      <div class="box box-success" style="width:85%; margin-left: 7.5%; min-height: 600px;">
+        <center><h3 class="box-title">Profile Picture</h3></center>
+        <div class="col-md-6" style="margin-left: 150px;">
+          <!-- Widget: user widget style 1 -->
+          <div class="box box-widget widget-user">
 
-            <div class="info-box-content">
-              <span class="info-box-text">Uploads</span>
-              <span class="info-box-number">13,648</span>
+            <div class="widget-user-image">
+              <div>
+                <center>
+                  <div class="col-md-12">
+                  <div class="text-center">
+                    <center><img src="<?php echo base_url(); ?>assets/images/avaselector.png" class="avatar img-circle" alt="avatar"></center>
+                    <h6>Upload a different photo...</h6>
+                    <label>
+                    <a class="btn btn-block btn-success btn-flat">Browse</a>
+                    <input type="file" style="position: fixed; top: -100em">
+                    </label>
+                  </div>
+                  </div>
+                </center>
+              </div>
             </div>
-            <!-- /.info-box-content -->
           </div>
-          <!-- /.info-box -->
         </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Likes</span>
-              <span class="info-box-number">93,139</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-      </div>
-        </div>
+            
         
          
-      
+      </div>
+      <!-- /.row (main row) -->
     </section>
     <!-- /.content -->
   </div>

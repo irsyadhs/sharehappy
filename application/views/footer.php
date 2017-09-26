@@ -2,7 +2,8 @@
     <div class="container footer-links">
       <div class="row">
         <div class="col-lg-4 footer-about">
-          
+          <!-- <img src="assets/images/logo.png" alt="sharinghappiness" /> -->
+          <br>
           <h5>Follow Us</h5>
       
           <ul>

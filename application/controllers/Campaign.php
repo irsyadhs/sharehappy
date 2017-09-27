@@ -7,7 +7,6 @@ class Campaign extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('header');
-		
 		$this->load->view('Campaign/index');
 
 	}
@@ -24,35 +23,22 @@ class Campaign extends CI_Controller {
 		$this->load->view('Campaign/ListDonatur');
 		//$this->load->view('footer');
 	}
-	public function MyInfo()
+	public function DonasiOffline()
 	{
 		$this->load->view('header');
-		$this->load->view('Profile/Campaign/MyInfo');
+		$this->load->view('Campaign/DonasiOffline');
 		//$this->load->view('footer');
 	}
-	public function EditPass()
+	public function TambahDonasiOffline()
 	{
 		$this->load->view('header');
-		$this->load->view('Profile/Campaign/EditPass');
+		$this->load->view('Campaign/TambahDonasiOffline');
 		//$this->load->view('footer');
 	}
-	public function VerifyAkun()
+	public function ListFundraiser()
 	{
 		$this->load->view('header');
-		$this->load->view('Profile/Campaign/VerifyAkun');
-		//$this->load->view('footer');
-	}
-		public function VerifyCommunity()
-	{
-		$this->load->view('header');
-		$this->load->view('Profile/Campaign/VerifyCommunity');
-		//$this->load->view('footer');
-	}
-
-	public function EditProfilePic()
-	{
-		$this->load->view('header');
-		$this->load->view('Profile/EditProfilePic');
+		$this->load->view('Campaign/ListFundraiser');
 		//$this->load->view('footer');
 	}
 }

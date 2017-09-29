@@ -21,40 +21,33 @@
     margin: 1em 0;
     padding: 0; 
 }
-.content{
-  background-color: white;
-}
-   .sidebar-menu  > li > a:hover{
+  .content{
+    background-color: white;
+  }
+   .sidebar-menu  > li > a:hover, .treeview-menu > li > a:hover{
     background-color: #95a5a6;
    }
 
    .sidebar-menu .current{
       background:#bdc3c7;
    }
-    .sidebar-menu .current .fa, .sidebar-menu .current > a > span{
+    .sidebar-menu .current .fa, .sidebar-menu .current > a > span, .treeview-menu .current > a{
       color: white;
     }
 
-   .sidebar-menu > li > ul> li> a:hover{
-    background-color: #95a5a6;
-   } 
-
-   .sidebar-menu > li > a > span{
-     font-size: 14px; 
+    .user-panel{
+      padding-top: 10px; padding-bottom: 0; margin-bottom: 0;
+    }
+    .sidebar-menu > li > a, .treeview-menu > li > a{
      color:#d35400;
    }
-    .sidebar-menu > li > a{
-     color:#d35400;
-   }
-    .treeview-menu > li > a{
-     color:#d35400;
-   }
-   .main-sidebar{
+      .main-sidebar, .main-sidebar .sidebar{
      padding-top: 0px; background-color: #ecf0e1; color: #ffffff;
    }
-   .main-sidebar .sidebar{
-      padding-top: 0px; background-color: #ecf0e1; color: #ffffff;
-    }
+   
+   .content .fa{
+    color:white;
+   }
     .ion{
       color: #ecf0e1;
     }
@@ -66,4 +59,14 @@
     }
     .bg-pumpkin{
       background-color: #d35400;
+    }
+
+    .box{
+      background-color: #f9f9f9;
+    }
+    .box-title{
+      margin-left: 7.5%;
+    }
+    .box-footer{
+      background-color: #f9f9f9;
     }

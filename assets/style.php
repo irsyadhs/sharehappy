@@ -122,7 +122,7 @@
 	float: right;
 }
 .header-right-btns {
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-left: 15px;
 }
 .header-right-btns ul {
@@ -135,7 +135,7 @@
 	text-transform: uppercase;
 }
 .header-right-btns ul li.login-panel {
-	top: 1px;
+	top: 0px;
 	position: relative;
 }
 .header-right-btns ul li a {
@@ -315,6 +315,7 @@
 
 .main-slider .tp-banner-container img {
 	width: inherit;
+	height: inherit;
 	margin: 0 auto;
 }
 .main-slider .tp-banner-container h1, .main-slider .tp-banner-container h2 {
@@ -1287,10 +1288,10 @@ section.map-container {
 .send-us {
 	color: #FFF;
 	text-align: center;
-	background: #3398cc;
+	background: #ecf0f1;
 }
 .send-us h3 {
-	color: #FFF;
+	color: #d35400;
 	padding: 0px 15px;
 	margin-bottom: 40px;
 }
@@ -1301,20 +1302,20 @@ footer {
 	color: #919191;
 	font-size: 12px;
 	font-weight: 300;
-	background: #1B2937;
+	background: #ecf0f1;
 }
 footer a, footer p {
 	color: #919191;
 }
 footer a:hover {
-	color: #3398CC;
+	color: #de5434;
 }
 footer .footer-links {
 	padding-top: 60px;
 	padding-bottom: 40px;
 }
 footer .footer-links h5 {
-	color: #B2B2B2;
+	color: #de5434;
 	text-transform: capitalize;
 }
 footer .footer-links ul {
@@ -1325,9 +1326,19 @@ footer .footer-links ul {
 footer .footer-links ul li a, footer .footer-links ul.contact-info li {
 	line-height: 30px;
 }
+footer .footer-links ul.contact-info h6 {
+	color: #363333;
+	font-weight: 300;
+	font-size: 13px;
+}
 footer .footer-links ul.contact-info li {
 	line-height: 20px;
 	padding: 5px 0px;
+	margin-bottom: -10px;
+	font-size: 13px;
+}
+footer .footer-links ul.contact-info li a{
+	color: #363333;
 }
 footer .footer-links ul.contact-info li span, footer .footer-links ul.contact-info li i {
 	display: inline-block;
@@ -1376,10 +1387,13 @@ footer .footer-links .footer-about ul li:hover i {
 	color: #919191;
 }
 footer .copyrights {
-	padding: 25px 0px;
+	padding-top: 2px;
+	padding-bottom: 8px;
 	border-top: solid 1px #263647;
+	background: #de5434;
 }
 footer .copyrights .copyright-text {
+	color: #fff;
 	padding-top: 10px;
 	padding-left: 0px;
 }

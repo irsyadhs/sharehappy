@@ -50,6 +50,37 @@
 <![endif]-->
 </head>
 
+<style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+      margin-left: -90px;
+      padding-bottom: 5px;
+      padding-left: 105px;
+      padding-right: 104px;
+      padding-top: -5px;
+      background-color: white;
+      z-index: 9999;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+
+  }
+
+  @media only screen and (max-width: 1300px){
+  .affix {
+    padding-left: 50px;
+    padding-right: 50px; 
+  }
+  @media only screen and (max-width: 1050px){
+  .affix {
+    padding-left: 20px;
+    padding-right: 20px; 
+  }
+}
+</style>
 
 <body>
 <?php if(!isset($_SESSION['login'])){
@@ -66,8 +97,8 @@
 ?>
 <div class="wrapper"> 
   <!-- Header -->
-  <header>
-    <div class="container">
+    <header class="headerhome">
+    <div class="container" data-spy="affix" data-offset-top="7" id="navscroll">
       <div id="logo">
         <a href="<?php echo site_url();?>Home"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Logo-SH" /></a>
         <button type="button" class="collapsed" id="navbar-toggle"><i class="icon fa fa-bars"></i></button>

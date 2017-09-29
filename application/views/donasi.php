@@ -120,7 +120,7 @@
             <div class="tabpanel">
               <ul class="nav nav-tabs pstabs" id="tabnormal">
                 <li class="active"><a href="donasi.php#nominal">Informasi dan Nominal</a></li>
-                <li class="disabled"><a href="#">Metode Pembayaran</a></li>
+                <li class=""><a href="donasi.php#payment">Metode Pembayaran</a></li>
               </ul>
               <hr>
               <br>
@@ -159,7 +159,7 @@
                   
                   
                 </div>
-                <div class="tab-pane disabled" id="payment">
+                <div class="tab-pane" id="payment">
                   <div class="form-group">
                     <h6>Metode Pembayaran</h6>
                     <div class="tabpanel">

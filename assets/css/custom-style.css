@@ -12,8 +12,16 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-header {
-	padding:5px 0px;
+header{
+	padding: 5px 0px;
+}
+
+.headerhome {
+	padding:0px 0px;
+	margin:0px 90px;
+	background-color: transparent;
+	position: fixed;
+	z-index: 999999;
 }
 
 img {
@@ -148,8 +156,17 @@ input:focus, textarea:focus, select:focus, button:focus, radio:focus, checkbox:f
 	background:#EF6342;
 }
 
-.btn.btn-1.red:hover, .btn.btn-3.red:hover, .btn.btn-4.red:hover {
+.btn.btn-1.red:hover, .btn.btn-3.red:hover, .btn.btn-4.red:hover, .btn.btn-4.red.profile:hover {
 	background:#DE5434;
+}
+.btn.btn-4.red.nav:hover {
+	background: #e67e22;
+	color: #fff;
+}
+
+.btn.btn-4.red.nav2:hover {
+	background: #de5434;
+	color: #fff;
 }
 
 .btn.btn-1.green {
@@ -347,6 +364,29 @@ input:focus, textarea:focus, select:focus, button:focus, radio:focus, checkbox:f
 	background:#EF6342;
 }
 
+.btn.btn-4.red.nav{
+	/*color:#EF6342;*/
+	height: 40px;
+	color: #fff;
+	background:#f39c12;
+	border-radius: 7px;
+}
+
+.btn.btn-4.red.nav2{
+	/*color:#EF6342;*/
+	height: 40px;
+	color: #de5434;
+	background:#fff;
+	border-radius: 7px;
+}
+
+.btn.btn-4.red.profile{
+	color:#FFF;
+	height: 40px;
+	background:#EF6342;
+	border-radius: 7px;
+}
+
 .btn.btn-4.yellow {
 	color:#FFF;
 	background:#F2D031;
@@ -434,15 +474,23 @@ input:focus, textarea:focus, select:focus, button:focus, radio:focus, checkbox:f
 	margin-top:15px;
 	font-weight:400;
 	border-radius:3px;
-	background:#DE5434;
+	background:#EF6342;
 	text-transform:uppercase;
+}
+
+.btn-camp{
+	background: #fff;
+	color: #de5435;
+}
+.btn-sigin.btn-camp:hover{
+	background: #bdc3c7;
 }
 
 
 
 .btn-sigin:hover {
 	color:#FFF;
-	background:#31C090;
+	background:#de5434;
 }
 
 /* CSS3 Transition Effects */

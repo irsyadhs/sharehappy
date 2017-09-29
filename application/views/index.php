@@ -1,4 +1,32 @@
   <style>
+    .tabcal{
+      width: 100%;
+      height: 280px;
+      background: #ecf0f1;
+    }
+    .tabcal h3{
+      color: #de5434;
+      margin-left: 130px;
+      padding-top: 40px;
+    }
+    .tabform{
+      padding-top: 30px;
+      padding-left: 130px;
+      padding-right: 90px;
+      padding-bottom: 30px;
+    }
+    .tab-pane table tr td{
+      font-size: 15px;
+      font-weight: 600;
+      padding-bottom: 7px;
+      padding-right: 15px;
+    }
+
+    .nav-tabs li a{
+      color: #de5434;
+      font-size: 15px;
+    }
+
     .footer-content1{
       display: inline-block;
     }
@@ -31,6 +59,11 @@
       padding-top: 50px;
       padding-left: 50px;
     }
+
+    table tr td font{
+      color: #d35400;
+    }
+
     @media only screen and (max-width: 300px){
       .footer-content1{
         display: none;
@@ -145,7 +178,7 @@
                 data-linktoslide="next"
                 style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
                   <div class="progress-section" style="background: url('<?php echo base_url(); ?>assets/images/caption-bg.png') no-repeat center center;">
-                    <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#32cc98" data-barsize="9.1" data-size="148" style="width:148px; margin:0px 106px; float: left; background: url('<?php echo base_url(); ?>assets/images/circle-fill-top.png') no-repeat center center;">
+                    <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#de5434" data-barsize="9.1" data-size="148" style="width:148px; margin:0px 106px; float: left; background: url('<?php echo base_url(); ?>assets/images/circle-fill-top.png') no-repeat center center;">
                       <div class="pie_progress__number">0%</div>
                       <div class="pie_progress__label">Goal</div>
                     </div>
@@ -202,7 +235,133 @@
       </div>
     </article>
   </section>
-  
+  <div class="tabcal">
+    <h3>Tunaikan Kewajiban</h3>
+    
+    <div class="tabform">
+      <div id="basic-data" class="form-wizard active">
+        <div class="tabpanel">
+          <ul class="nav nav-tabs pstabs">
+            <li class="active"><a href="index.php#zakatp">Zakat Profesi</a></li>
+            <li><a href="index.php#zakats">Zakat Simpanan</a></li>
+            <li><a href="index.php#zakate">Zakat Emas</a></li>
+            <li><a href="index.php#ins">Infaq / Sedekah</a></li>
+          </ul>
+          <hr>
+          <br>
+          <div class="tab-content">
+            <div class="tab-pane active" id="zakatp">
+              <?php echo form_open('hitungzakatp'); ?>
+              <table>
+                <tr>
+                  <td colspan="2">Penghasilan Perbulan</td>
+                  <td colspan="2">Penghasilan Lainnya</td>
+                  <td colspan="2">Hutang Jatuh Tempo</td>
+                  <td colspan="2">Kewajiban Zakat</td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control" name="incmon"></td>
+                  <td>+</td>
+                  <td><input type="text" class="form-control" name="incoth"></td>
+                  <td>-</td>
+                  <td><input type="text" class="form-control" name="hujatem"></td>
+                  <td>=</td>
+                  <td><input type="text" class="form-control" name="incmon" disabled="disabled"></td>
+                  <td>
+                    <?php 
+                      echo form_submit('submit', 'Tunaikan Zakat', 'class="btn btn-4 red"');
+                      echo form_close();
+                    ?>
+                  </td>
+                </tr>
+              </table>
+              
+            </div>
+            <div class="tab-pane" id="zakats">
+              <?php echo form_open('hitungzakats'); ?>
+              <table>
+                <tr>
+                  <td colspan="2">Penghasilan Perbulan</td>
+                  <td colspan="2">Penghasilan Lainnya</td>
+                  <td colspan="2">Hutang Jatuh Tempo</td>
+                  <td colspan="2">Kewajiban Zakat</td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control" name="incmon"></td>
+                  <td>+</td>
+                  <td><input type="text" class="form-control" name="incoth"></td>
+                  <td>-</td>
+                  <td><input type="text" class="form-control" name="hujatem"></td>
+                  <td>=</td>
+                  <td><input type="text" class="form-control" name="incmon" disabled="disabled"></td>
+                  <td>
+                    <?php 
+                      echo form_submit('submit', 'Tunaikan Zakat', 'class="btn btn-4 red"');
+                      echo form_close();
+                    ?>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tab-pane" id="zakate">
+              <?php echo form_open('hitungzakate'); ?>
+              <table>
+                <tr>
+                  <td colspan="2">Penghasilan Perbulan</td>
+                  <td colspan="2">Penghasilan Lainnya</td>
+                  <td colspan="2">Hutang Jatuh Tempo</td>
+                  <td colspan="2">Kewajiban Zakat</td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control" name="incmon"></td>
+                  <td>+</td>
+                  <td><input type="text" class="form-control" name="incoth"></td>
+                  <td>-</td>
+                  <td><input type="text" class="form-control" name="hujatem"></td>
+                  <td>=</td>
+                  <td><input type="text" class="form-control" name="incmon" disabled="disabled"></td>
+                  <td>
+                    <?php 
+                      echo form_submit('submit', 'Tunaikan Zakat', 'class="btn btn-4 red"');
+                      echo form_close();
+                    ?>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tab-pane" id="ins">
+              <?php echo form_open('hitungins'); ?>
+              <table>
+                <tr>
+                  <td colspan="2">Penghasilan Perbulan</td>
+                  <td colspan="2">Penghasilan Lainnya</td>
+                  <td colspan="2">Hutang Jatuh Tempo</td>
+                  <td colspan="2">Kewajiban Zakat</td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control" name="incmon"></td>
+                  <td>+</td>
+                  <td><input type="text" class="form-control" name="incoth"></td>
+                  <td>-</td>
+                  <td><input type="text" class="form-control" name="hujatem"></td>
+                  <td>=</td>
+                  <td><input type="text" class="form-control" name="incmon" disabled="disabled"></td>
+                  <td>
+                    <?php 
+                      echo form_submit('submit', 'Tunaikan Infaq', 'class="btn btn-4 red"');
+                      echo form_close();
+                    ?>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            
+          </div>
+        </div>         
+      </div>
+    </div>
+    
+  </div>
   <!-- Page Content -->
   <!-- <section class="white">
     <article class="container" id="intor-section">
@@ -261,7 +420,7 @@
               <p>Pellentesque pharetra sapien non quam placerat vestibulum. Aliquam dignissim ex nec feugiat.</p>
               </div>
               <div class="popular-data"> <img src="assets/images/funder_<?php echo $i; ?>.jpg" alt="Funder" />
-                <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#34cc99" data-barsize="7.1">
+                <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#de5434" data-barsize="7.1">
                   <div class="pie_progress__number">0%</div>
                   <div class="pie_progress__label">Goal</div>
                 </div>
@@ -281,11 +440,7 @@
       </div>
       <div class="popular-btn red"> <a href="projects.html">See More</a> </div>
     </article>
-  </section>
-  
-  
-
-  
+  </section>  
   <section class="send-us">
     <article class="container">
       <h3>Ingin menggalang dana atau berdonasi?</h3>
@@ -364,9 +519,6 @@
           <center><a href="<?php echo site_url(); ?>newcampaign" class="btn btn-4 red">Create Campaign</a></center>
         </div>
       </div>
-      
-      
-      
-       
     </article>
   </section>
+  <div>

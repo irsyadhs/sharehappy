@@ -133,7 +133,7 @@
             <!-- ************************ Tabs Start ************************ -->
             <div class="tabpanel">
               <div id="tabnormal">
-                <ul class="nav nav-tabs pstabs" id="affix1" data-spy="affix" data-offset-top="720">
+                <ul class="nav nav-tabs pstabs" id="affix1" data-spy="affix" data-offset-top="760">
                   <li class="active"><a href="campaignpage.php#about-project">Detail</a></li>
                   <li><a href="campaignpage.php#costs">Update</a></li>
                   <li><a href="campaignpage.php#donatur">Donatur<i>27</i></a></li>
@@ -329,7 +329,7 @@
               <div class="w-title">Donasi dan Bagikan!</div>
               <div style="padding:15px;">
                 <p>Bantu pembuat campaign ini mencapai target nya!</p>
-                <div id="affix2" data-spy="affix" data-offset-top="720">
+                <div id="affix2" data-spy="affix" data-offset-top="760">
                   <div style="text-align:center;"><a href="<?php echo site_url(); ?>donasi "><button type="button" class="btn btn-3 blue donasi" style="margin:5px 0px 5px 0px;">DONASI SEKARANG</button></a></div>
                 </div>
                 <div id="donasimobile">

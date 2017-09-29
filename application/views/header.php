@@ -55,8 +55,11 @@
   .affix {
       top: 0;
       width: 100%;
-      padding-left: 90px;
-      padding-right: 100px;
+      margin-left: 0px;
+      padding-bottom: 5px;
+      padding-left: 105px;
+      padding-right: 104px;
+      padding-top: -5px;
       background-color: white;
       z-index: 9999;
   }
@@ -102,50 +105,17 @@
       </div>
       <div class="nav-header-right">
         <nav class="main-nav">
-          <ul>
-            <li><a href="<?php echo site_url();?>projects">Donasi</a>
-              <ul>
-                <li><a href="#">Program di Kota Anda</a>
-                  <ul>
-                    <li><a href="#">Aceh</a></li>
-                    <li><a href="#">Balikpapan</a></li>
-                    <li><a href="#">Bandung</a></li>
-                </ul>
-                </li>
-                <li><a href="#">Pendidikan</a></li>
-                <li><a href="#">Kesehatan</a></li>
-                <li><a href="#">Pemberdayaan</a></li>
-                <li><a href="#">Program Kemanusiaan</a></li>
-                <li><a href="#">Pembangunan Masjid</a></li>
-                 <li><a href="#">Yatim dan Dhuafa</a></li>
-                <li><a href="#">Infrastruktur</a></li>
-              </ul>
-            </li>
-            <li><a href="<?php echo site_url(); ?>projects">Program Lain</a>
-              <ul>
-                <li><a href="#">Sedekah</a>
-                  <ul>
-                    <li><a href="#">Zakat</a></li>
-                    <li><a href="#">Infaq</a></li>
-                    <li><a href="#">Fidyah</a></li>
-                    <li><a href="#">Wakaf</a></li>
-                    <li><a href="#">Program Kemanusiaan</a></li>
-                </ul>
-                </li>
-                <li><a href="<?php echo site_url();?>superqurban">Superqurban</a></li>
-                <li><a href="<?php echo site_url();?>ramadhan">Ramadhan</a></li>
-              </ul>
-            </li>
-          </ul>
         </nav>
         <div class="header-right">
           <div class="header-right-btns">
             <ul>
+              <li><div style="text-align:center;"><a href="<?php echo site_url(); ?>projects"><button type="button" class="btn btn-4 red nav2">Program</button></a></div></li>
+              <li><div style="text-align:center;"><a href="<?php echo site_url(); ?>Home"><button type="button" class="btn btn-4 red nav2">Zakat</button></a><span></span></div></li>
               <?php 
               if($_SESSION['login'] == FALSE){ 
               ?>
               <li class="login-panel">
-                <a href="index.html#login">Login</a><span>&nbsp</span>
+                <div style="text-align:center;"><a href="<?php echo site_url(); ?>login"><button type="button" class="btn btn-4 red profile">Log in</button></a></div>
                 <div class="dropdown-login">
                   <div class="arrow"></div>
                   <div class="reverse"></div>
@@ -167,24 +137,26 @@
                       echo form_submit('submit', 'Sign me in!', 'class="btn btn-sigin"');
                       echo form_close();
                     ?>
+                    <br>
+                    <?php echo form_open('register', 'class="form-signin"'); ?>
                     <?php
-                    echo form_open('register', 'class="form-signin"');
-                      echo form_submit('submit', 'Baru? Daftar Sekarang!', 'class="btn btn-sigin"');
+                      echo form_submit('submit', 'Daftar', 'class="btn btn-sigin btn-camp"');
                       echo form_close();
                     ?>
+                    
                     <!-- <button type="submit" class="btn btn-sigin">Sign me in!</button> -->
                     <br style="clear:both;">
                     
                 </div>
               </li>
               <!-- <li><a href="<?php //echo base_url(); ?>register" class="btn btn-4 green">Register</a></li> -->
-              <li><a href="<?php echo base_url(); ?>trylogin" class="btn btn-4 red">New Campaign</a></li>
+
               <?php }else{ ?>
               <!-- <li><a href="<?php echo base_url(); ?>profile" class="btn btn-4 green">Profil</a></li> -->
 
               <!-- <li><a href="<?php echo base_url(); ?>profile" class="btn btn-4 green">Irsyad</a></li> -->
               <li class="login-panel">
-                <a href="<?php echo base_url(); ?>profile">Profile</a><span>&nbsp</span>
+                <div style="text-align:center;"><a href="<?php echo site_url(); ?>profile"><button type="button" class="btn btn-4 red profile">Profile</button></a></div>
                 <div class="dropdown-login">
                   <div class="arrow"></div>
                   <div class="reverse"></div>
@@ -195,7 +167,13 @@
                   ?></div>
                   <?php echo form_open('profile', 'class="form-signin"'); ?>
                   <?php
-                    echo form_submit('submit', 'Dashboard', 'class="btn btn-sigin"');
+                    echo form_submit('submit', 'Dashboard', 'class="btn btn-sigin btn-camp"');
+                    echo form_close();
+                  ?>
+                  <br>
+                  <?php echo form_open('newcampaign', 'class="form-signin"'); ?>
+                  <?php
+                    echo form_submit('submit', 'New Campaign', 'class="btn btn-sigin btn-camp"');
                     echo form_close();
                   ?>
                   <br>
@@ -210,7 +188,7 @@
                     
                 </div>
               </li>
-              <li><a href="<?php echo base_url(); ?>newcampaign" class="btn btn-4 red">New Campaign</a></li>&nbsp&nbsp
+              
               <!-- <li><a href="<?php echo base_url(); ?>Proses/logout">Logout</a></li> -->
               <?php } ?>
               

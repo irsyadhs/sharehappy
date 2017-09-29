@@ -31,7 +31,7 @@ class Home extends CI_Controller {
 		//$this->load->model('M_Regis');
 		//$load['data'] = $this->M_Regis->getAll("data_properti");
 		//$this->load->view('beranda', $load);
-		$this->load->view('header', $load);
+		$this->load->view('headerhome', $load);
 		$this->load->view('index', $load);
 		$this->load->view('footer');
 	}

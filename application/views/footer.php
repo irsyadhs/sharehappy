@@ -1,58 +1,151 @@
+ <style type="text/css">
+   footer .footer-links .footer-about h5{
+      color: #de5434;
+      font-size: 14px;
+      display: inline;
+    }
+    footer .footer-links .footer-about h6{
+      font-size: 13.5px;
+      margin-right: 45px;
+      display: inline;
+      color: #363333;
+      font-weight: 400;
+    }
+    .footertop{
+      width: 100%;
+      height: 80px;
+      background: #fff;
+    }
+    .footerlogo{
+      display: inline-block;
+      width: 20%;
+      padding-top: 10px;
+      padding-left: 130px;
+      padding-bottom: 0px;
+    }
+    .footertag{
+      display: inline-block;
+      width: auto;
+      padding-top: 20px;
+      padding-left: 0px;
+      padding-bottom: 0px;
+    }
+    .footerfindus{
+      display: inline-block;
+      float: right;
+      width: auto;
+      padding-top: 30px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+    }
+    
+    .footerfinduslogo{
+      display: inline-block;
+      float: right;
+      width: auto;
+      padding-top: 25px;
+      padding-right: 130px;
+      padding-bottom: 0px;
+    }
+    .footerfinduslogo ul{
+      list-style: none;
+    }
+
+    .footerfinduslogo ul li{
+      display: inline;
+      margin-right: 9px;
+    }
+ </style>
+ <div class="footertop">
+    <div class="footerlogo">
+      <img src="<?php echo base_url(); ?>assets/images/logoft.png" alt="Logo-SH">
+    </div>
+    <div class="footertag">
+      <h6 style="border-bottom: none;">Situs Donasi Online Terpercaya</h6>
+    </div>
+    
+    <div class="footerfinduslogo">
+      <ul>
+        <li>
+          <a href="http://www.facebook.com/sharinghappiness.org"><img src="<?php echo base_url(); ?>assets/images/facebook-logo.png" alt="facebook"></a>
+        </li>
+        <li>
+          <a href="http://www.twitter.com/share4happiness"><img src="<?php echo base_url(); ?>assets/images/twitter-logo.png" alt="twitter"></a>
+        </li>
+        <li>
+          <a href="http://www.instagram.com/sharinghappinessorg"><img src="<?php echo base_url(); ?>assets/images/instagram-logo.png" alt="instagram"></a>
+        </li>
+        <li>
+          <a href="http://telegram.me/rzcarebot"><img src="<?php echo base_url(); ?>assets/images/telegram-logo.png" alt="telegram"></a>
+        </li>
+        <li>
+          <a href="http://whatsapp://send?abid=+6281573001555&text=Assalamualaikum"><img src="<?php echo base_url(); ?>assets/images/whatsapp-logo.png" alt="whatsapp"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footerfindus">
+      <h6 style="border-bottom: none;">Temukan Kami di</h6>
+    </div>
+  </div>
  <footer>
     <div class="container footer-links">
       <div class="row">
         <div class="col-lg-4 footer-about">
           <!-- <img src="assets/images/logo.png" alt="sharinghappiness" /> -->
-          <br>
-          <h5>Follow Us</h5>
-      
-          <ul>
-            <li title="Facebook"><a href="http://www.facebook.com/sharinghappiness.org"><img src="assets/images/fb-logo.png" alt="facebook"></a></li>
-            <li title="Twitter"><a href="http://www.twitter.com/share4happiness"><img src="assets/images/twitter-logo.png" alt="twitter"></a></li>
-            <li title="Youtube"><a href="http://www.instagram.com/sharinghappinessorg"><img src="assets/images/instagram-logo.png" alt="instagram"></a></li>
-            <li title="Google+"><a href="http://telegram.me/rzcarebot"><img src="assets/images/telegram-logo.png" alt="telegram"></a></li>
-            <li title="LinkedIn"><a href="http://whatsapp://send?abid=+6281573001555&text=Assalamualaikum"><img src="assets/images/whatsapp-logo.png" alt="whatsapp"></a></li>
-          </ul>
+          <h5>Sharinghappiness.org</h5>
+          <h6>adalah website donasi online yang memfasilitasi berbagai program sosial dan kemanusiaan, agar semakin banyak orang yang bisa berbagi kebahagiaan</h6>
+          <br><br><br>
+          <h5>Jl. Turangga No. 25C</h5><br>
+          <h6>Bandung 40264</h6><br>
+          <h6>Jawa Barat, Indonesia</h6><br>
+          <h6>info@sharinghappiness.org</h6>
         </div>
         
         
-        <div class="col-lg-2">
-          <h5>Other Programs</h5>
+        <div class="col-lg-3">
+          <h5>SharingHappiness.org</h5>
           <ul class="contact-info">
-           <li><a href="#">Zakat</a></li>
-           <li><a href="#">Infaq</a></li>
-           <li><a href="#">Fidyah</a></li>
-           <li><a href="#">Wakaf</a></li>
+           <li><a href="#">Tentang SharingHappiness</a></li>
+           <li><a href="#">Syarat & Ketentuan</a></li>
+           <li><a href="#">Kebijakan Privasi</a></li>
+           <li><a href="#">Berita & informasi</a></li>
+           <li><a href="#">Happiness Story</a></li>
+           <li><a href="#">Artikel</a></li>
           </ul>
         </div>
         
         <div class="col-lg-2">
-          <h5>Learn More</h5>
+          <h5>Donatur</h5>
           <ul class="contact-info">
-           <li><a href="<?php echo site_url();?>about">About Sharing Happiness</a></li>
-           <li><a href="https://www.rumahzakat.org/tentang-kami/" target="_blank">About Rumah Zakat</a></li>
-           <li><a href="<?php echo site_url();?>faqs">FAQs</a></li>
-           <li><a href="#">Privacy Policy</a></li>
+           <li><a href="#">Cara Donasi</a></li>
+           <li><a href="#">Pembayaran</a></li>
+           <li><a href="#">Tips Berdonasi</a></li>
+           <li><a href="#">Program Pilihan</a></li>
+           <li><a href="#">Donasi Program Terkini</a></li>
+           <li><a href="#">FAQs</a></li>
           </ul>
         </div>
         <div class="col-lg-2">
-          <h5>Contact Us</h5>
           <ul class="contact-info">
+            <h6> Bagaimana titipan donasi Anda tersalurkan?
+            Pastikan Anda mendapatkan update seputar siapa saja yang sudah Anda bahagiakan.</h6>
+          </ul>
+          <form action="" method="POST"></form>
+          <div class="form-group">
+            <table width="250px">
+              <tr><td style="padding-top: 10px;padding-bottom: 20px;">
+                <input type="email" name="sendemail" value="" class="form-control" placeholder="Masukkan email Anda">
+              </td></tr>
+              <tr><td>
+                <input type="submit" name="submit" value="submit" class="btn btn-4 red">
+              </td></tr>
+            </table>
             
-            <li><b>Fax</b> <br> <span>022-7332451</span></li>
-            <li><b>Call Center</b> <br><span>0804 100 1000 <br> 022-731 7400</span></li>
-            <li><b>SMS / WA Center</b> <br> <span>0815 7300 1555</span></li>
-            
-          </ul>
-        </div>
-        <div class="col-lg-2">
+          </div>
           
-          <ul class="contact-info">
-            
-            <li><span>Jl. Turangga No. 33 Bandung<br /> Jawa Barat - Indonesia</span></li>
-          <li><b>Email</b> <br> <span>welcome@rumahazakat.org</span></li>
-          <li><b>Website</b> <br> <span>www.rumahazakat.org</span></li>
-          </ul>
+          
+          
+          
         </div>
       </div>
     </div>

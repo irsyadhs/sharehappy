@@ -41,4 +41,10 @@ class Campaign extends CI_Controller {
 		$this->load->view('Campaign/ListFundraiser');
 		//$this->load->view('footer');
 	}
+	public function EditCampaign()
+	{
+		$this->load->view('header');
+		$this->load->view('Campaign/EditCampaign');
+		//$this->load->view('footer');
+	}
 }

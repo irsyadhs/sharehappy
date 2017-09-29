@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>plugins/daterangepicker/daterangepicker-bs3.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/my-styles.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,48 +39,6 @@
   <![endif]-->
   <style>
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
-  
-  
-  .affix {
-      top: 0;
-      width: 100%;
-      padding-left: 90px;
-      padding-right: 100px;
-      background-color: white;
-      z-index: 9999;
-  }
-
-  .affix + .container-fluid {
-      padding-top: 70px;
-
-  }
-   .sidebar-menu  > li > a:hover{
-    background-color: orange;
-   }
-   .sidebar-menu .current{
-      background:#e74c3c;
-   }
-   .sidebar-menu > li > ul> li> a:hover{
-    background-color: orange;
-   } 
-
-   .sidebar-menu > li > a > span{
-     font-size: 14px; 
-     color:#ffffff;
-   }
-    .sidebar-menu > li > a{
-     color:#ffffff;
-   }
-    .treeview-menu > li > a{
-     color:#ffffff;
-   }
-   .main-sidebar{
-     padding-top: 0px; background-color: #e67e22; color: #ffffff;
-   }
-   .main-sidebar .sidebar{
-      padding-top: 0px; background-color: #e67e22; color: #ffffff;
-    }
- 
 
 </style>
 </head>
@@ -94,37 +53,43 @@
         <center><img src="<?php echo base_url()?>assets/images/popular_4.jpg" class="img" alt="User Image" style="width: 100%;"></center>
         <div class="user-panel" style="padding-top: 0;">
           <div>
-            <center><h3>Ayo Bantu Adi</h3></center>
-            <a href="<?php echo base_url()?>campaignpage" class="btn btn-block btn-danger btn-flat">Lihat Detail</a>
-            <center><h5>Rp. 19.975.000</h5></center>
-            <center><h6>dari target Rp. 19.975.000</h6></center>
+            <center><h3 class="pumpkin">Ayo Bantu Adi</h3></center>
+            <div class="row">
+              <div class="col-md-9 col-xs-9" >
+                <a href="<?php echo base_url()?>campaignpage" class="btn btn-block btn-danger btn-flat" >Lihat Detail</a>    
+              </div>
+              <div class="col-md-2 col-xs-2" style="margin-left: 0px; margin-right: 5px; padding-left: 0px; padding-right: 0px;">
+                <a href="<?php echo base_url()?>campaign/editcampaign" class="btn btn-block btn-danger btn-flat"><i class="fa fa-edit"></i></a>                 
+              </div>
+              </div>
+            <center><h5 class="pumpkin">Rp. 19.975.000</h5></center>
+            <center><h5 class="pumpkin">dari target Rp. 19.975.000</h5></center>
+            <hr>
           </div>
         </div>
-      
       <ul class="sidebar-menu">
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-        <li>
+      <li>
           <a href="<?php echo base_url()?>Campaign">
-            <span>Dashboard</span>
+            <i class="fa fa-dashboard"></i>Dashboard
           </a>
         </li>
         <li>
           <a href="<?php echo base_url()?>Campaign/UpdateCampaign">
-            <span>Tulis Update</span>
+            <i class="fa fa-pencil-square-o"></i>Tulis Update
           </a>
         </li>
         <li class="treeview">
           <a href="<?php echo base_url()?>profile/MyCampaign">
-            <span>List Donatur</span><i class="fa fa-angle-left pull-right"></i>
+            <i class="fa fa-book"></i>List Donatur<i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url(); ?>Campaign/ListDonatur">List Donatur</a></li>
-            <li><a href="<?php echo base_url(); ?>Campaign/DonasiOffline">Donasi Offline</a></li>
+            <li><a href="<?php echo base_url(); ?>Campaign/ListDonatur"><i class="fa fa-list-alt"></i>List Donatur</a></li>
+            <li><a href="<?php echo base_url(); ?>Campaign/DonasiOffline"><i class="fa fa-sticky-note-o"></i>Donasi Offline</a></li>
           </ul>
         </li>
         <li class="current">
-          <a href="<?php echo base_url()?>Campaign/ListFUndraiser">
-            <span>List Fundraiser</span></a>
+          <a href="<?php echo base_url()?>Campaign/ListFundraiser">
+            <i class="fa fa-list"></i><span>List Fundraiser<span></a>
         </li>
       </ul>
     </section>
@@ -136,15 +101,15 @@
     <section class="content">
       <!-- Main row -->
       
-      <div class="box box-success" style="width:85%; margin-left: 7.5%; min-height: 600px;">
-        <center><h3 class="box-title">Fundraiser</h3></center>
+        <h2 class="box-title">Fundraiser</h2>
+      <div class="box box-warning" style="width:85%; margin-left: 7.5%; min-height: 600px;">
 
-<br>
+        <br>
 
         <div class="row" style="width: 80%; margin-left: 10%;">
         <div class="col-lg-6">
         <div class="info-box">
-            <span class="info-box-icon bg-green"><i class="fa fa-male"></i></span>
+            <span class="info-box-icon bg-carrot"><i class="fa fa-male"></i></span>
             <div class="info-box-content">
               <span class="info-box-text">Jumlah Fundraiser</span>
               <span class="info-box-number">5</span>
@@ -156,7 +121,7 @@
         <div class="col-lg-6">
         <div class="info-box">
           
-            <span class="info-box-icon bg-green"><i class="fa fa-money"></i></span>
+            <span class="info-box-icon bg-carrot"><i class="fa fa-money"></i></span>
             <div class="info-box-content">
               <span class="info-box-text">Total Donasi Terkumpul</span>
               <span class="info-box-number">Rp. 50.000.000</span>

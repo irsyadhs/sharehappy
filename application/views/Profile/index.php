@@ -38,6 +38,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
     
+
 </head>
 
 <body>
@@ -104,12 +105,12 @@
        <!-- small box -->
         <div class="col-md-4 col-xs-6">   
           <!-- small box -->
-          <div class="small-box bg-orange">
+          <div class="small-box bg-carrot">
             <div class="inner">
-              <h3>3</h3>
-              <p>Campaign</p>
+              <h3 style="color: white;">3</h3>
+              <p style="color: white;">Campaign</p>
             </div>
-            <div class="icon">
+            <div class="icon" style="opacity: 0.4;">
               <i class="ion ion-ribbon-b"></i>
             </div>
           </div>
@@ -117,12 +118,12 @@
         
         <div class="col-md-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-orange">
+          <div class="small-box bg-carrot">
             <div class="inner">
-              <h3>10</h3>
-              <p>Donasi</p>
+              <h3 style="color: white;">10</h3>
+              <p style="color: white;">Donasi</p>
             </div>
-            <div class="icon">
+            <div class="icon" style="opacity: 0.4;">
               <i class="ion ion-ribbon-a"></i>
             </div>
           </div>
@@ -130,12 +131,12 @@
         <!-- ./col -->
         <div class="col-md-4 col-xs-12">
           <!-- small box -->
-          <div class="small-box bg-orange">
+          <div class="small-box bg-carrot">
             <div class="inner">
-              <h3><sup style="font-size: 18px">Rp.</sup> 6.000.000</h3>
-              <p>Total Donasi Saya</p>
+              <h3 style="color: white;"><sup style="font-size: 18px">Rp.</sup> 6.000.000</h3>
+              <p style="color: white;">Total Donasi Saya</p>
             </div>
-            <div class="icon">
+            <div class="icon" style="opacity: 0.4;">
               <i class="ion ion-cash"></i>
             </div>
           </div>

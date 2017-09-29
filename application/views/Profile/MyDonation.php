@@ -103,8 +103,8 @@
     <section class="content" style="background-color: white;">
       <!-- Main row -->
       
-        <h2 class="box-title" style="margin-left: 7.5%;">Donasi Saya</h2>
-      <div class="box box-warning" style="width:85%; margin-left: 7.5%; min-height: 600px; background-color: #f9f9f9">
+        <h2 class="box-title">Donasi Saya</h2>
+      <div class="box box-warning" style="width:85%; margin-left: 7.5%; min-height: 600px; ">
         <br>
 
         <div class="row" style="width: 80%; margin-left: 10%;">

@@ -106,7 +106,7 @@
      
       <!-- Main row -->
         <h2 class="box-title" style="margin-left: 7.5%;">Campaign Saya</h2>
-      <div class="box box-warning" style="width:85%; margin-left: 7.5%; height: 1500px; background-color: #f9f9f9;">
+      <div class="box box-warning" style="width:85%; margin-left: 7.5%; height: 1500px;">
         <br>
                 
         
@@ -129,7 +129,15 @@
             <div class="widget-user-header bg-black" style="background: url('<?php echo base_url();?>assets/img/photo1.png') center center; height: 300px;">
             </div>
             <div class="widget-user-header bg-pumpkin">
-              <a href="<?php echo base_url()?>campaign" class="widget-user-username" style="color: white;">Campaign Mari Berbagi</a><br>
+              <div class="row">
+                <div class="col-md-10 col-xs-10">
+                  <a href="<?php echo base_url()?>campaign" class="widget-user-username" style="color: white;">Campaign Mari Berbagi</a>                 
+                </div>
+                <div class="col-md-2 col-xs-2">
+                  <a href="<?php echo base_url()?>campaign/EditCampaign" class="widget-user-username" style="color: white;"><i class="fa fa-edit"></i></a>                 
+                </div>
+              </div>
+
               <a style="color:#bdc3c7;">write your campaign description here</a>
 
             </div>

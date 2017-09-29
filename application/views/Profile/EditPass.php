@@ -65,29 +65,29 @@
       <ul class="sidebar-menu">
         <li>
           <a href="<?php echo base_url()?>profile">
-            <span>Dashboard</span>
+            <i class="fa fa-dashboard"></i><span>Dashboard</span>
           </a>
         </li>
         <li>
           <a href="<?php echo base_url()?>profile/MyDonation">
-            <span>Donasi Saya</span>
+            <i class="fa fa-money"></i><span>Donasi Saya</span>
           </a>
         </li>
         <li>
           <a href="<?php echo base_url()?>profile/MyCampaign">
-            <span>Kampanye Saya</span>
+            <i class="fa fa-life-saver"></i><span>Kampanye Saya</span>
           </a>
         </li>
         <!--multi-->
         <li class="treeview active">
           <a href="#">
-            <span>Setting</span> <i class="fa fa-angle-left pull-right"></i>
+            <i class="fa fa-cogs"></i><span>Setting</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu menu-open">
-            <li><a href="<?php echo base_url(); ?>Profile/MyInfo">Profil Saya</a></li>
-            <li class="current"><a href="<?php echo base_url(); ?>Profile/EditPass">Edit Password</a></li>
-            <li><a href="<?php echo base_url(); ?>Profile/EditProfilePic">Edit Profile Picture</a></li>
-            <li><a href="<?php echo base_url(); ?>Profile/VerifyAkun" >Verifikasi Akun</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/MyInfo"><i class="fa fa-user"></i>Profil Saya</a></li>
+            <li class="current"><a href="<?php echo base_url(); ?>Profile/EditPass"><i class="fa fa-key"></i>Edit Password</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/EditProfilePic"><i class="fa fa-photo"></i>Edit Profile Picture</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/VerifyAkun" ><i class="fa fa-check"></i>Verifikasi Akun</a></li>
          </ul>
         </li>
       </ul>
@@ -101,10 +101,10 @@
     <!-- Main content -->
     <section class="content">
       <!-- Main row -->
-      <div class="box box-success" style="width:85%; margin-left: 7.5%; min-height: 600px;">
+      <h2 class="box-title">Ganti Password</h2>
+      <div class="box box-warning" style="width:85%; margin-left: 7.5%; min-height: 600px;">
         <div class="row" style="width: 80%; margin-left: 10%;">
         <div class="box-header with-border">
-              <center><h3 class="box-title">Ganti Password</h3></center>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -150,7 +150,7 @@
                 </div>-->
               <!-- /.box-body -->
 
-              <div class="box-footer" style="padding-left: 100px; padding-right: 50px;">
+              <div class="box-footer">
                 <center><button type="submit" class="btn btn-primary">Submit</button></center>
               </div>
             </form>

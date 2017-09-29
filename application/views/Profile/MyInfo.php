@@ -83,7 +83,7 @@
             <i class="fa fa-cogs"></i><span>Setting</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu menu-open">
-            <li class="current"><a href="<?php echo base_url(); ?>Profile/MyInfo">P<i class="fa fa-user"></i>rofil Saya</a></li>
+            <li class="current"><a href="<?php echo base_url(); ?>Profile/MyInfo"><i class="fa fa-user"></i>Profil Saya</a></li>
             <li><a href="<?php echo base_url(); ?>Profile/EditPass"><i class="fa fa-key"></i>Edit Password</a></li>
             <li><a href="<?php echo base_url(); ?>Profile/EditProfilePic"><i class="fa fa-photo"></i>Edit Profile Picture</a></li>
             <li ><a href="<?php echo base_url(); ?>Profile/VerifyAkun" ><i class="fa fa-check"></i>Verifikasi Akun</a></li>
@@ -101,8 +101,8 @@
     <section class="content">
       <!-- Main row -->
       
-      <div class="box box-success" style="width:85%; margin-left: 7.5%; min-height: 600px;">
-        <center><h3 class="box-title">Profil Saya</h3></center>
+        <h2 class="box-title" >Profil Saya</h2>
+      <div class="box box-warning" style="width:85%; margin-left: 7.5%; min-height: 600px;">
           <form class="form-horizontal" style="padding-left: 50px; padding-right: 50px;">       
             <div class="box-body">
               <div class="form-group">

@@ -1,1 +1,69 @@
-/*YOUR CUSTOM STYLES*/
+    
+    .affix {
+        top: 0;
+        width: 100%;
+        padding-left: 90px;
+        padding-right: 100px;
+        background-color: white;
+        z-index: 9999;
+    }
+
+    .affix + .container-fluid {
+        padding-top: 70px;
+
+    }
+
+   hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d35400;
+    margin: 1em 0;
+    padding: 0; 
+}
+.content{
+  background-color: white;
+}
+   .sidebar-menu  > li > a:hover{
+    background-color: #95a5a6;
+   }
+
+   .sidebar-menu .current{
+      background:#bdc3c7;
+   }
+    .sidebar-menu .current .fa, .sidebar-menu .current > a > span{
+      color: white;
+    }
+
+   .sidebar-menu > li > ul> li> a:hover{
+    background-color: #95a5a6;
+   } 
+
+   .sidebar-menu > li > a > span{
+     font-size: 14px; 
+     color:#d35400;
+   }
+    .sidebar-menu > li > a{
+     color:#d35400;
+   }
+    .treeview-menu > li > a{
+     color:#d35400;
+   }
+   .main-sidebar{
+     padding-top: 0px; background-color: #ecf0e1; color: #ffffff;
+   }
+   .main-sidebar .sidebar{
+      padding-top: 0px; background-color: #ecf0e1; color: #ffffff;
+    }
+    .ion{
+      color: #ecf0e1;
+    }
+    .pumpkin{
+      color: #d35400;
+    }
+    .bg-carrot{
+      background-color: #e67e22;
+    }
+    .bg-pumpkin{
+      background-color: #d35400;
+    }

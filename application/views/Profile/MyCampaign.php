@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>plugins/daterangepicker/daterangepicker-bs3.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/my-styles.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,47 +41,6 @@
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
   
   
-.affix {
-        top: 0;
-        width: 100%;
-        padding-left: 90px;
-        padding-right: 100px;
-        background-color: white;
-        z-index: 9999;
-    }
-
-    .affix + .container-fluid {
-        padding-top: 70px;
-
-    }
-
-   .sidebar-menu  > li > a:hover{
-    background-color: yellow;
-   }
-   .sidebar-menu .current{
-      background:#555555;
-   }
-   .sidebar-menu > li > ul> li> a:hover{
-    background-color: yellow;
-   } 
-
-   .sidebar-menu > li > a > span{
-     font-size: 14px; 
-     color:#ffffff;
-   }
-    .sidebar-menu > li > a{
-     color:#ffffff;
-   }
-    .treeview-menu > li > a{
-     color:#ffffff;
-   }
-   .main-sidebar{
-     padding-top: 0px; background-color: #e67e22; color: #ffffff;
-   }
-   .main-sidebar .sidebar{
-      padding-top: 0px; background-color: #e67e22; color: #ffffff;
-    }
-
   </style>
 </head>
 
@@ -96,7 +56,7 @@
             <center><img src="<?php echo base_url()?>assets/img/user2-160x160.jpg" class="img-circle" alt="User Image"></center>
           </div>
           <div >
-            <center><h3>Alexander Pierce</h3></center>
+            <center><h4 style="color: #d35400">Alexander Pierce</h4></center>
             <hr>
           </div>
         </div>
@@ -106,29 +66,29 @@
       <ul class="sidebar-menu">
         <li>
           <a href="<?php echo base_url()?>profile">
-            <span>Dashboard</span>
+            <i class="fa fa-dashboard"></i><span>Dashboard</span>
           </a>
         </li>
         <li>
           <a href="<?php echo base_url()?>profile/MyDonation">
-            <span>Donasi Saya</span>
+            <i class="fa fa-money"></i><span>Donasi Saya</span>
           </a>
         </li>
         <li class="current">
           <a href="<?php echo base_url()?>profile/MyCampaign">
-            <span>Kampanye Saya</span>
+            <i class="fa fa-life-saver"></i><span>Kampanye Saya</span>
           </a>
         </li>
         <!--multi-->
         <li class="treeview">
           <a href="#">
-            <span>Setting</span> <i class="fa fa-angle-left pull-right"></i>
+            <i class="fa fa-cogs"></i><span>Setting</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url(); ?>Profile/MyInfo">Profil Saya</a></li>
-            <li><a href="<?php echo base_url(); ?>Profile/EditPass">Edit Password</a></li>
-            <li><a href="<?php echo base_url(); ?>Profile/EditProfilePic">Edit Profile Picture</a></li>
-            <li><a href="<?php echo base_url(); ?>Profile/VerifyAkun" >Verifikasi Akun</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/MyInfo"><i class="fa fa-user"></i>Profil Saya</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/EditPass"><i class="fa fa-key"></i>Edit Password</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/EditProfilePic"><i class="fa fa-photo"></i>Edit Profile Picture</a></li>
+            <li><a href="<?php echo base_url(); ?>Profile/VerifyAkun"><i class="fa fa-check"></i>Verifikasi Akun</a></li>
          </ul>
         </li>
       </ul>
@@ -145,8 +105,8 @@
     <section class="content">
      
       <!-- Main row -->
-      <div class="box box-success" style="width:85%; margin-left: 7.5%; height: 1500px;">
-        <center><h3 class="box-title">Campaign Saya</h3></center>
+        <h2 class="box-title" style="margin-left: 7.5%;">Campaign Saya</h2>
+      <div class="box box-warning" style="width:85%; margin-left: 7.5%; height: 1500px; background-color: #f9f9f9;">
         <br>
                 
         
@@ -155,20 +115,20 @@
       <div class="col-md-4">
           <!-- Widget: user widget style 1 -->
           
-             <a href="<?php echo base_url()?>newcampaign" class="btn btn-block btn-success btn-flat">Create New Campaign</a>
+             <a href="<?php echo base_url()?>newcampaign" class="btn btn-block btn-warning btn-flat">Create New Campaign</a>
             
           <!-- /.widget-user -->
       </div>
       </div>
       <div class="row" style="margin-left:10%; margin-top: 10px; margin-right: 5%">
 
-      <div class="col-md-5">
+      <div class="col-md-6">
           <!-- Widget: user widget style 1 -->
           <div class="box box-widget widget-user">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-black" style="background: url('<?php echo base_url();?>assets/img/photo1.png') center center; height: 300px;">
             </div>
-            <div class="widget-user-header bg-aqua-active">
+            <div class="widget-user-header bg-pumpkin">
               <a href="<?php echo base_url()?>campaign" class="widget-user-username" style="color: white;">Campaign Mari Berbagi</a><br>
               <a style="color:#bdc3c7;">write your campaign description here</a>
 
@@ -176,7 +136,7 @@
 
             <div class="box-footer">
               <div class="row">
-                <div class="col-sm-5 border-right">
+                <div class="col-md-5 col-xs-5 border-right">
                   <div class="description-block">
                     <h5 class="description-header">Rp.10.000.000</h5>
                     <span class="description-text">TERKUMPUL</span>
@@ -184,7 +144,7 @@
                   <!-- /.description-block -->
                 </div>
                 <!-- /.col -->
-                <div class="col-sm-3 border">
+                <div class="col-md-3 col-xs-3">
                   <div class="description-block">
                     <h5 class="description-header">35</h5>
                     <span class="description-text">HARI SISA</span>
@@ -192,7 +152,7 @@
                   <!-- /.description-block -->
                 </div>
                 <!-- /.col -->
-                <div class="col-sm-4 border-left">
+                <div class="col-md-4 col-xs-4 border-left">
                   <div class="description-block">
                     <h5 class="description-header">67%</h5>
                     <span class="description-text">TERDANAI</span>
@@ -211,7 +171,7 @@
           <!-- Widget: user widget style 1 -->
           <div class="box box-widget widget-user">
             <!-- Add the bg color to the header using any of the bg-* classes -->
-            <div class="widget-user-header bg-aqua-active">
+            <div class="widget-user-header bg-pumpkin">
               <a href="<?php echo base_url()?>campaign" class="widget-user-username" style="color: white;">Campaign Mari Berbagi</a><br>
               <a style="color:#bdc3c7;">write your campaign description here</a>
 

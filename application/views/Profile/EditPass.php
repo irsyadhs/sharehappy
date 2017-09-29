@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>plugins/daterangepicker/daterangepicker-bs3.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/my-styles.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,47 +39,6 @@
   <![endif]-->
   <style>
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
-  
-  
-.affix {
-        top: 0;
-        width: 100%;
-        padding-left: 90px;
-        padding-right: 100px;
-        background-color: white;
-        z-index: 9999;
-    }
-
-    .affix + .container-fluid {
-        padding-top: 70px;
-
-    }
-
-sidebar-menu  > li > a:hover{
-    background-color: orange;
-   }
-   .sidebar-menu .current{
-      background:#e74c3c;
-   }
-   .sidebar-menu > li > ul> li> a:hover{
-    background-color: orange;
-   } 
-   .sidebar-menu > li > a > span{
-     font-size: 14px; 
-     color:#ffffff;
-   }
-    .sidebar-menu > li > a{
-     color:#ffffff;
-   }
-    .treeview-menu > li > a{
-     color:#ffffff;
-   }
-   .main-sidebar{
-     padding-top: 0px; background-color: #e67e22; color: #ffffff;
-   }
-   .main-sidebar .sidebar{
-      padding-top: 0px; background-color: #e67e22; color: #ffffff;
-    }
 
   </style>
 </head>
@@ -95,7 +55,7 @@ sidebar-menu  > li > a:hover{
             <center><img src="<?php echo base_url()?>assets/img/user2-160x160.jpg" class="img-circle" alt="User Image"></center>
           </div>
           <div >
-            <center><h3>Alexander Pierce</h3></center>
+            <center><h4 class="pumpkin">Alexander Pierce</h3></center>
             <hr>
           </div>
         </div>

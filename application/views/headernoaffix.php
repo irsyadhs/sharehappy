@@ -52,13 +52,14 @@
 
 
 <body>
-<?php if(!isset($_SESSION['login'])){
-  $load = array(
-    'login' => FALSE
-  );
-  
-  $this->session->set_userdata( $load );
-  /* *********ALL RESOURCE WILL BE HERE ************ */
+<?php 
+  if(!isset($_SESSION['login'])){
+    $load = array(
+      'login' => FALSE
+    );
+    
+    $this->session->set_userdata( $load );
+    /* *********ALL RESOURCE WILL BE HERE ************ */
   
   }
   $profilename = "Irsyad Harfiansyah";

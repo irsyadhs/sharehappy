@@ -1,3 +1,12 @@
+  <style type="text/css">
+    .form-box{
+      background: #ecf0f1;
+      border-radius: 10px;
+      border-bottom: #bdc3c7 solid 5px;
+      padding: 10px 10px 10px 10px;
+    }
+  </style>
+
   <!-- ************************ Header Bottom | Page Title ************************ -->
   <section class="header-bottom">
     <article>
@@ -47,11 +56,11 @@
             <div id="basic-data" class="form-wizard active">
            	            
               <div class="form-group">
-                <div class="form-left">
+                <div class="form-left form-box">
                   <input type="text" value="" class="form-control" placeholder="Judul Campaign" name="title" required>
                   <p>Buat judul yang spesifik</p>
                 </div>
-                <div class="form-right">
+                <div class="form-right form-box">
                   <input type="text" value="" class="form-control" placeholder="Target Donasi Terkumpul" name="money" required>
                   <p>Minimal 1000000</p>
                 </div>
@@ -59,11 +68,11 @@
               </div>
             
               <div class="form-group">
-                <div class="form-left">
+                <div class="form-left form-box">
                   <input type="text" value="" class="form-control" placeholder="Link Campaign" name="link" required>
                   <p>contoh: sharinghappiness.com/danauntukbudi</p>
                 </div>
-                <div class="form-right">
+                <div class="form-right form-box">
                   <select class="form-control arrow-down" name="category">
                     <option value="">Kategori</option>
                     <option value="pemberdayaan">Pemberdayaan</option>
@@ -79,10 +88,10 @@
               </div>
             
               <div class="form-group">
-                <div class="form-left">
+                <div class="form-left form-box">
                   <input type="text" value="" class="form-control" placeholder="Batas Akhir Campaign" name="date">
                 </div>
-                <div class="form-right">
+                <div class="form-right form-box">
                     <select class="form-control arrow-down" name="recipient">
                     <option value="">Lokasi Penerima Manfaat</option>
                     <option value="aceh">Aceh</option>
@@ -95,7 +104,7 @@
               </div>
               
               <div class="form-group">
-                <div class="form-left selectimage" id="imguploadbasic-1">
+                <div class="form-left selectimage form-box" id="imguploadbasic-1">
                   <input type="text" value="" class="form-control" placeholder="Gambar Utama">
                   <button type="button" class="imageUploadBtn">Choose File</button>
                   <input type="file" name="basicimg[]" />
@@ -103,7 +112,7 @@
                 <div class="clear"></div>
               </div>
               
-              <div class="form-group">
+              <div class="form-group form-box">
                 <textarea name="description" class="form-control" placeholder="Deskripsi Campaign"></textarea>
               </div>
               
@@ -114,20 +123,20 @@
             <div id="social-media" class="form-wizard">
               
               <div class="form-group">
-                <div class="form-left">
+                <div class="form-left form-box">
                   <input type="url" value="" class="form-control" placeholder="Facebook Url" name="fb">
                 </div>
-                <div class="form-right">
+                <div class="form-right form-box">
                   <input type="url" value="" class="form-control" placeholder="Twitter Url" name="tw">
                 </div>
                 <div class="clear"></div>
               </div>
               
               <div class="form-group">
-                <div class="form-left">
+                <div class="form-left form-box">
                   <input type="url" value="" class="form-control" placeholder="Phone Number" name="pn">
                 </div>
-                <div class="form-right">
+                <div class="form-right form-box">
                   <input type="url" value="" class="form-control" placeholder="Email" name="email">
                 </div>
                 <div class="clear"></div>
@@ -150,7 +159,7 @@
               </div>
               
               <div id="video-inputs" class="imgORvid">
-                <div class="form-group">
+                <div class="form-group form-box">
                   <div class="form-left" style="width:100%;">
                     <input type="text" value="" class="form-control" placeholder="Youtube or Vimeo Link" name="title">
                   </div>
@@ -159,7 +168,7 @@
               </div>
               
               <div id="images-inputs" class="imgORvid">
-                <div class="form-group">
+                <div class="form-group form-box">
                   <div id="image-field-cnt">
                     <div class="form-left selectimage" id="imgupload-1">
                       <input type="text" value="" class="form-control" placeholder="Upload Image">
@@ -181,12 +190,13 @@
             </div>
 
             <div id="lastsubmit" class="form-wizard">
-              <div class="form-group">
-                <center><input type="checkbox" id="agreesnk" value="setuju" onchange="isChecked(this, 'sub1')">&nbsp&nbsp<span>Saya telah membaca dan setuju pada <a href="#">ketentuan yang berlaku</a></span>
-                </center>
+              <div class="form-group form-box">
+                <center><h5> Dengan klik submit, Saya telah membaca dan setuju pada <a href="#">ketentuan yang berlaku</a></h5>
+                <br><br><br>
+                <button type="submit" class="btn btn-4 red" style="width: 270px">SUBMIT</button></center>
               </div>
               
-              <center><button type="submit" class="btn btn-4 red" style="width: 270px">SUBMIT</button></center>
+              
             </div>
             
           </form>

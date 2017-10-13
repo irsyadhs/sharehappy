@@ -7,16 +7,24 @@
   .affix {
       top: 0;
       width: 100%;
-      padding-left: 90px;
+      padding-left: 100px;
       padding-right: 100px;
       padding-bottom: 20px;
       background-color: #DE5434;
       z-index: 9999;
+      transition: 0.2s;
   }
 
   .affix + .container-fluid {
       padding-top: 70px;
 
+  }
+
+  .form-box{
+    background: #ecf0f1;
+    border-radius: 10px;
+    border-bottom: #bdc3c7 solid 5px;
+    padding: 10px 10px 10px 10px;
   }
 
   #tabmobile{
@@ -79,7 +87,7 @@
   
   
   <?php 
-  if(!isset($_SESSION['login'])){
+  if(!isset($_SESSION['login']) || $_SESSION['login']==""){
     $load = array(
       'login' => FALSE
     );
@@ -95,7 +103,7 @@
   <section class="header-bottom">
     <article>
       <?php $campaigntitle = "Bantu adi sembuh!" ?>
-      <div class="container" data-spy="affix" data-offset-top="7"><h3><?php echo $campaigntitle; ?></h3></div>
+      <div class="container" data-spy="affix" data-offset-top="150"><h3><?php echo $campaigntitle; ?></h3></div>
     </article>
   </section>
   <!-- ************************ Page Content ************************ -->
@@ -126,7 +134,7 @@
               <br>
               <div class="tab-content">
                 <div class="tab-pane active" id="nominal">
-                  <div class="form-group">
+                  <div class="form-group form-box">
                     <h6>Nominal donasi</h6>
                     <input type="text" name="nominal" value="<?php echo set_value('nominal'); ?>" class="form-control" placeholder="Mimimal 20000, kelipatan 1000">
                   </div>
@@ -134,16 +142,16 @@
                   <?php 
                     if($_SESSION['login'] == FALSE){
                    ?>
-                  <div class="form-group">
+                  <div class="form-group form-box">
                     <h6>Nama Lengkap</h6>
                     <input type="text" name="nama" value="<?php echo set_value('nama'); ?>" class="form-control">
                   </div>
                   <div class="form-group">
-                    <div class="form-left">
+                    <div class="form-left form-box">
                       <h6>Nomor telepon</h6>
                       <input type="text" name="tlp" value="<?php echo set_value('tlp'); ?>" class="form-control" placeholder="08xxx" >
                     </div>
-                    <div class="form-right">
+                    <div class="form-right form-box">
                       <h6>Email</h6>
                       <input type="email" name="email" value="<?php echo set_value('email'); ?>" class="form-control">
                     </div>
@@ -300,7 +308,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group form-box">
                     <h6>Pesan</h6>
                     <textarea class="form-control" placeholder="Tuliskan pesan anda yang sesuai dengan isi campaign (opsional)" name="komentar"></textarea>
                   </div>

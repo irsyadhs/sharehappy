@@ -56,7 +56,7 @@
                   <p>Pellentesque pharetra sapien non quam placerat vestibulum. Aliquam dignissim ex nec feugiat.</p>
                   </div>
                   <div class="popular-data"> <img src="assets/images/funder_<?php echo $i; ?>.jpg" alt="Funder" />
-                    <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#34cc99" data-barsize="7.1">
+                    <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#de5434" data-barsize="7.1">
                       <div class="pie_progress__number">0%</div>
                       <div class="pie_progress__label">Goal</div>
                     </div>
@@ -80,7 +80,7 @@
         
         <!-- ************************ Right Side Area ************************ -->
         
-        <div class="col-lg-3 sidebar-container">
+        <div class="col-lg-3 hidden-md sidebar-container">
           <div class="sidebar">
           
             <div class="sidebar-item">
@@ -123,7 +123,7 @@
                       </div>
                     </div>
                     <div class="clear"></div>
-                    <button type="button" class="btn btn-3 green submit-filters">Submit</button>
+                    <button type="button" class="btn btn-3 red submit-filters">Done</button>
                   </fieldset>
                 </form>
               </div>

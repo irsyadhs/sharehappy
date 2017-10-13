@@ -215,7 +215,7 @@
 	.button-styles .col-lg-6 {float:none; width:100%; margin-bottom:25px;}
 	
 	footer .footer-links .col-lg-4 {
-		width:100%;
+		width:33%;
 		text-align:center;
 		margin-bottom:30px;
 	}
@@ -410,9 +410,9 @@
 		width:33.3333336%;
 	}
 	
-	#popular .col-lg-3:last-child {
+	/*#popular .col-lg-3 .sidebar-container:last-child {
 		display:none;
-	}
+	}*/
 	
 	#popular .col-lg-9.content-cnt {width:100%;}
 	
@@ -422,7 +422,7 @@
 	.button-styles .col-lg-6 {float:none; width:100%; margin-bottom:25px;}
 	
 	footer .footer-links .col-lg-4 {
-		width:100%;
+		width:33%;
 		text-align:center;
 		margin-bottom:30px;
 	}

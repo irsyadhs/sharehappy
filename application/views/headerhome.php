@@ -52,7 +52,8 @@
 
 <style>
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
-  .affix {
+  /* class headerhome*/
+  /*.affix {
       top: 0;
       width: 100%;
       margin-left: -90px;
@@ -62,6 +63,18 @@
       padding-top: -5px;
       background-color: white;
       z-index: 9999;
+  }*/
+  .affix {
+      top: 0;
+      width: 100%;
+      margin-left: 0px;
+      padding-bottom: 0px;
+      padding-left: 105px;
+      padding-right: 104px;
+      padding-top: -5px;
+      background-color: white;
+      z-index: 9999;
+      transition: 0.2s;
   }
 
   .affix + .container-fluid {
@@ -83,13 +96,14 @@
 </style>
 
 <body>
-<?php if(!isset($_SESSION['login'])){
-  $load = array(
-    'login' => FALSE
-  );
-  
-  $this->session->set_userdata( $load );
-  /* *********ALL RESOURCE WILL BE HERE ************ */
+<?php 
+  if(!isset($_SESSION['login'])){
+    $load = array(
+      'login' => FALSE
+    );
+    
+    $this->session->set_userdata( $load );
+    /* *********ALL RESOURCE WILL BE HERE ************ */
   
   }
   $profilename = "Irsyad Harfiansyah";
@@ -97,10 +111,11 @@
 ?>
 <div class="wrapper"> 
   <!-- Header -->
-    <header class="headerhome">
-    <div class="container" data-spy="affix" data-offset-top="7" id="navscroll">
+    <header>
+    <div id="navscroll">
+    <div class="container" data-spy="affix" data-offset-top="7">
       <div id="logo">
-        <a href="<?php echo site_url();?>Home"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Logo-SH" /></a>
+        <a href="<?php echo site_url();?>Home"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="logoSH"></a>
         <button type="button" class="collapsed" id="navbar-toggle"><i class="icon fa fa-bars"></i></button>
       </div>
       <div class="nav-header-right">
@@ -204,5 +219,6 @@
         </div>
       </div>
     </div>
+  </div>
   </header>
   

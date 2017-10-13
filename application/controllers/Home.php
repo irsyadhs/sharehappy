@@ -78,6 +78,7 @@ class Home extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+
 	public function about()
 	{
 		$this->load->view('header');
@@ -118,6 +119,7 @@ class Home extends CI_Controller {
 		$this->load->view('headernoaffix');
 		$this->load->view('campaignpage');
 		$this->load->view('footer');
+
 	}
 
 	public function createcampaign()
@@ -125,6 +127,7 @@ class Home extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('createcampaign');
 		$this->load->view('footer');
+		header("refresh:7;url=Home");
 	}
 
 	public function loginfail()

@@ -637,7 +637,7 @@ span.intro-icon i {
 	height: 100%;
 	display: block;
 	position: absolute;
-	background: rgba(51, 152, 204, 0.5);
+	background: rgba(230, 126, 34, 0.3);
 	transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
 	-webkit-transition: all 0.3s linear;
@@ -649,14 +649,14 @@ span.intro-icon i {
 .popular-item .project-image a, .blog-post .post-image a, .blog-page .blog-item .blog-image a {
 	top: -45%;
 	left: 28%;
-	color: #FFF;
+	color: #de5434;
 	z-index: 999;
 	opacity: 0.9;
 	padding: 8px 20px;
 	font-size: 12px;
 	position: absolute;
 	text-align: center;
-	background: #3398CC;
+	background: #ecf0f1;
 	border-radius: 50px;
 	vertical-align: middle;
 	transition: all 0.3s linear;
@@ -1389,7 +1389,7 @@ footer .footer-links .footer-about ul li:hover i {
 footer .copyrights {
 	padding-top: 2px;
 	padding-bottom: 8px;
-	border-top: solid 1px #263647;
+	border-top: solid 1px #fff;
 	background: #de5434;
 }
 footer .copyrights .copyright-text {

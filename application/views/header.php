@@ -62,6 +62,7 @@
       padding-top: -5px;
       background-color: white;
       z-index: 9999;
+      transition: 0.2s;
   }
 
   .affix + .container-fluid {
@@ -83,13 +84,14 @@
 </style>
 
 <body>
-<?php if(!isset($_SESSION['login'])){
-  $load = array(
-    'login' => FALSE
-  );
-  
-  $this->session->set_userdata( $load );
-  /* *********ALL RESOURCE WILL BE HERE ************ */
+<?php 
+  if(!isset($_SESSION['login'])){
+    $load = array(
+      'login' => FALSE
+    );
+    
+    $this->session->set_userdata( $load );
+    /* *********ALL RESOURCE WILL BE HERE ************ */
   
   }
   $profilename = "Irsyad Harfiansyah";

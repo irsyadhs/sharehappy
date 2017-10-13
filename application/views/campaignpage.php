@@ -8,6 +8,7 @@
       z-index: 9990;
       margin-left: -105px;
       padding-left: 100px;
+      transition: 0.4s;
   }
 
   #affix2.affix{
@@ -18,7 +19,7 @@
       padding-top: 0px;
       background-color: white;
       z-index: 9999;
-
+      transition: 0.4s;
   }
 
   #affix3.affix{
@@ -31,7 +32,7 @@
       background-color: #3398CC;
       z-index: 9999;
       margin-left: -30px;
-
+      transition: 0.4s;
   }
 
   .affix + .container-fluid {
@@ -339,16 +340,6 @@
                 </div>
                 <button class="btn btn-facebook" > <i class="fa fa-facebook"></i> &nbsp; BAGIKAN KE FACEBOOK </button>
                 </a>
-
-                <div class="side-box">
-                  <form action="project-single.php">
-                    <!-- <div class="form-group">
-                      <label for="amount"><strong>Your Contribution</strong></label>
-                      <input type="text" class="form-control" id="amount" placeholder="Enter an amount">
-                    </div> -->
-                    
-                  </form>
-                </div>
               </div>
             </div>
             

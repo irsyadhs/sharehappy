@@ -5,7 +5,13 @@
   <section class="gray">
     <article class="container faqpage">
       <div class="row">
-        <center><h3>Profile Page</h3></center>
+        <center><h3>All done</h3>
+          <br><br>
+          <h5>Halaman campaign Kamu sedang kami review</h5>
+          <h5>Kami akan beritahu via email sesaat setelah campaign Kamu berjalan!</h5>
+          <br><br><br>
+          <h6>Kamu akan dialihkan ke beranda</h6>
+        </center>
         <div class="col-lg-12">
           <div class="single-page">
           
@@ -16,9 +22,3 @@
   </section>
   
   <!-- ************************ Send your idea ************************ -->
-    <section class="send-us">
-    <article class="container">
-      <h3>Butuh halaman campaign kamu sendiri?</h3>
-      <a href="<?php echo site_url() ?>newcampaign" class="btn btn-3 red">create campaign</a>
-    </article>
-  </section>
